@@ -32,6 +32,8 @@
 
   <!-- Cloudflare Web Analytics (privacy-friendly, no cookies, no consent banner) -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "7aa0b101f73443539f845625f7cd3bb3"}'></script>
+
+  <script defer src="/script.js"></script>
 </head>
 <body>
 
@@ -41,7 +43,7 @@
         <img src="assets/logo-192.png" alt="" width="36" height="36">
         <span>BikeHealth</span>
       </a>
-      <nav aria-label="Navigation principale">
+      <nav id="primary-nav" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="/#features">Fonctionnalités</a></li>
           <li><a href="/#comment">Comment ça marche</a></li>
@@ -49,7 +51,16 @@
           <li><a href="/release-notes">Notes de version</a></li>
         </ul>
       </nav>
-      <a class="btn btn-primary nav-cta" href="/notification">Être notifié au lancement</a>
+      <div class="nav-end">
+        <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix"> au lancement</span></a>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
