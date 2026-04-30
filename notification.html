@@ -94,6 +94,28 @@
               placeholder="Pour qu'on s'adresse à toi par ton prénom">
           </div>
 
+          <div class="form-group">
+            <label>Tu roules plutôt… <span class="optional">(optionnel)</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="riderType" value="velotaf">
+                🚴 Vélotaf : je roule tous les jours pour aller au boulot
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="riderType" value="sport">
+                🏅 Sport : sorties régulières, je fais des km
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="riderType" value="balade">
+                🌿 Balade : occasionnel, pour le plaisir
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="riderType" value="vae">
+                ⚡ VAE : je roule en vélo à assistance électrique
+              </label>
+            </div>
+          </div>
+
           <div class="form-group form-checkbox">
             <input type="checkbox" id="rgpd" name="rgpd" required>
             <label for="rgpd">
@@ -118,11 +140,17 @@
 
         <div id="successBlock" class="form-success" role="status" aria-live="polite" hidden>
           <div class="success-icon" aria-hidden="true">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
           </div>
           <h2>Merci, c'est noté !</h2>
-          <p>On te tient au courant dès que BikeHealth est disponible. À très vite sur ton vélo.</p>
-          <a class="btn btn-secondary btn-large" href="/">Retour à l'accueil</a>
+          <p>On te prévient dès que BikeHealth est disponible. D'ici là, si tu connais un cycliste qui galère avec l'entretien de son vélo, passe-lui le lien, ça l'aidera autant que toi.</p>
+          <div class="success-actions">
+            <a class="btn btn-primary btn-large" id="shareBtn" href="https://bikehealth.fr/notification">Partager BikeHealth</a>
+            <a class="btn btn-secondary btn-large" href="/">Retour à l'accueil</a>
+          </div>
         </div>
       </div>
     </div>
@@ -258,6 +286,7 @@
             body: JSON.stringify({
               email: email,
               firstName: firstName,
+              riderType: form.querySelector('input[name="riderType"]:checked')?.value || '',
               rgpd: rgpd ? 'oui' : 'non',
               source: detectSource(),
               userAgent: navigator.userAgent
@@ -273,6 +302,18 @@
         } catch (err) {
           setLoading(false);
           showError('Oups, l\'envoi a échoué. Tu peux réessayer ou nous écrire à contact@bikehealth.fr.');
+        }
+      });
+
+      // Partage natif si disponible (Web Share API), sinon le href du bouton fait fallback
+      document.getElementById('shareBtn')?.addEventListener('click', function (e) {
+        if (navigator.share) {
+          e.preventDefault();
+          navigator.share({
+            title: 'BikeHealth',
+            text: 'Une app pour anticiper l\'usure de son vélo. Je trouve ça utile, ça peut t\'intéresser.',
+            url: 'https://bikehealth.fr/notification'
+          }).catch(function () { /* user cancelled */ });
         }
       });
     })();
