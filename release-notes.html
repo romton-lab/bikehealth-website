@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes de version · BikeHealth</title>
+  <meta name="description" content="L'historique des versions de BikeHealth : nouvelles fonctionnalités, améliorations et corrections.">
+  <meta name="theme-color" content="#F4EFE6">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/png" href="assets/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/logo-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Cloudflare Web Analytics (privacy-friendly, no cookies, no consent banner) -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "7aa0b101f73443539f845625f7cd3bb3"}'></script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-brand" aria-label="Accueil BikeHealth">
+        <img src="assets/logo-192.png" alt="" width="36" height="36">
+        <span>BikeHealth</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="/#features">Fonctionnalités</a></li>
+          <li><a href="/#comment">Comment ça marche</a></li>
+          <li><a href="/#pro">Pro</a></li>
+          <li><a href="/release-notes" aria-current="page">Notes de version</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="mailto:contact@bikehealth.fr?subject=BikeHealth%20%E2%80%94%20Notification%20de%20lancement&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20%C3%AAtre%20tenu%20au%20courant%20de%20la%20sortie%20publique%20de%20BikeHealth.%0A%0AMerci%20!">Être notifié</a>
+    </div>
+  </header>
+
+  <main class="error-page">
+    <div class="container">
+      <div class="error-content">
+        <h1>Bientôt disponible</h1>
+        <p class="lead">Les notes de version seront publiées ici dès la première sortie publique de BikeHealth. En attendant, inscris-toi pour être prévenu au lancement.</p>
+        <div class="error-actions">
+          <a class="btn btn-primary btn-large" href="mailto:contact@bikehealth.fr?subject=BikeHealth%20%E2%80%94%20Notification%20de%20lancement&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20%C3%AAtre%20tenu%20au%20courant%20de%20la%20sortie%20publique%20de%20BikeHealth.%0A%0AMerci%20!">Être notifié au lancement</a>
+          <a class="btn btn-secondary btn-large" href="/">Retour à l'accueil</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--
+    ============================================================
+    NOTES DE VERSION (à réactiver à la sortie publique)
+    ============================================================
+    Pour publier les notes de version :
+    1. Remplacer le <main class="error-page"> ci-dessus par le
+       <main class="legal"> ci-dessous (décommenter le bloc).
+    2. Vérifier la date de la release.
+    3. Retirer la balise <meta name="robots" content="noindex">
+       en tête de page pour que la page soit indexée.
+
+  <main class="legal">
+    <div class="container">
+      <article class="legal-content">
+
+        <h1>Notes de version</h1>
+        <p class="legal-meta">L'historique des évolutions de BikeHealth, version après version.</p>
+
+        <section class="release">
+          <div class="release-header">
+            <h2 class="release-version">v2.3</h2>
+            <span class="release-date">Avril 2026</span>
+            <span class="release-tag latest">Dernière version</span>
+          </div>
+
+          <p>Atelier favori, mode vacances, recherche par marque et modèle, statistiques de trajets, gestion des vélos qui ont déjà roulé, et un paquet d'améliorations sur le suivi au quotidien.</p>
+
+          <h3>Nouveautés</h3>
+          <ul>
+            <li><strong>Atelier favori.</strong> Renseigne ton atelier vélo favori depuis ton profil. Recherche par nom ou adresse via Google : la fiche est préremplie automatiquement (nom, adresse, téléphone, horaires). Un bouton <em>Contacter mon atelier</em> est disponible sur chaque fiche vélo, avec un lien <em>M'y rendre</em> qui ouvre ton appli de navigation. Saisie manuelle possible si ton atelier n'est pas dans Google.</li>
+            <li><strong>Mode vacances.</strong> Active le mode vacances depuis tes Habitudes en indiquant tes dates de départ et de retour. BikeHealth suspend la génération automatique de trajets pendant cette période, puis reprend tout seul à ton retour. Un bandeau discret sur la liste de tes vélos te rappelle que le mode est actif.</li>
+            <li><strong>Notifications groupées et enrichies.</strong> Les alertes composants et les rappels d'entretien sont regroupés par vélo (fini le spam quand plusieurs pièces approchent leur seuil en même temps). Pour les entretiens récurrents, choix explicite entre <em>Reporter de 3 jours</em> ou <em>Reporter de 50 km</em>. Nouvelle notification de <strong>révision annuelle</strong> au bout d'un an depuis la dernière révision.</li>
+            <li><strong>Ajout de vélo : recherche par marque et modèle.</strong> Fini le double menu déroulant. Tape directement la marque, les suggestions apparaissent en temps réel, le modèle préremplit les caractéristiques. Saisie libre toujours possible. Lien discret pour utiliser un vélo générique en un clic si tu ne connais pas le tien.</li>
+            <li><strong>Statistiques de trajets.</strong> Nouveau sous-écran <em>Statistiques</em> dans ton profil : répartition de tes trajets par type (Boulot, Sport, Balade, Courses…) en donut chart. Pourcentages, nombre de trajets, kilomètres par catégorie. Filtrable par vélo.</li>
+            <li><strong>Gestion des vélos qui ont déjà roulé.</strong> À l'ajout d'un vélo avec des kilomètres initiaux, BikeHealth te propose d'indiquer les composants neufs ou récemment révisés. Plus de fausses alertes « à remplacer » dès le premier jour pour les pièces déjà changées.</li>
+          </ul>
+
+          <h3>Améliorations</h3>
+          <ul>
+            <li><strong>Historique des trajets par mois.</strong> Tes trajets validés sont regroupés par mois avec un récap (nombre de trajets, km). Mois passés repliés par défaut.</li>
+            <li><strong>Historique des entretiens par mois.</strong> Même logique : regroupement mensuel, filtre par type (entretiens récurrents / remplacements / autre), barre colorée pour distinguer entretien et remplacements.</li>
+            <li><strong>Type de trajet à l'ajout.</strong> Choisis le type (Boulot, Sport, Balade…) dès la saisie. Modifiable a posteriori depuis le détail.</li>
+            <li><strong>Case « Révision complète » dans le formulaire d'entretien.</strong> Coche-la pour mettre à jour automatiquement la date de dernière révision de ton vélo.</li>
+            <li><strong>Notes sur tes entretiens.</strong> Les notes saisies à l'entretien apparaissent maintenant dans la liste et le détail.</li>
+            <li><strong>Marque et modèle des composants.</strong> En mode Avancé, modifie directement marque et modèle d'un composant depuis la fiche vélo (icône ⚙️).</li>
+            <li><strong>Notes libres sur la fiche vélo.</strong> Ajoute des notes personnelles (pression des pneus, observations, infos atelier…) depuis la bulle d'info ⓘ.</li>
+            <li><strong>Renommage du vélo.</strong> Modifie le nom de ton vélo depuis la bulle ⓘ, en mode Simple comme Avancé. BikeHealth vérifie l'unicité dans ton parc.</li>
+            <li><strong>Attributs structurels modifiables.</strong> En mode Avancé, modifie type de freins, VAE, matériaux, dérailleurs depuis la bulle ⓘ. Un changement de type de freins ou de VAE met à jour automatiquement les composants associés.</li>
+            <li><strong>Photo personnalisée.</strong> Choisis une photo depuis ta galerie pour personnaliser chaque vélo. Retour à la photo d'origine possible à tout moment.</li>
+            <li><strong>Nouveau dashboard profil.</strong> Réorganisation en 4 sous-écrans navigables : Habitudes, Connexions, Atelier, Statistiques. Chaque section affiche un résumé dynamique de son état.</li>
+            <li><strong>Pastille d'alerte.</strong> Indicateur rouge ou orange permanent sur l'onglet Alertes : tu sais d'un coup d'œil s'il y a des composants à surveiller ou des entretiens à faire.</li>
+          </ul>
+
+          <h3>Corrections</h3>
+          <ul>
+            <li><strong>Fausses alertes sur vélos archivés.</strong> Les composants d'un vélo archivé ne déclenchent plus ni pastille ni notification.</li>
+            <li><strong>Dates de saisie uniformisées.</strong> Tous les champs date utilisent désormais le sélecteur de calendrier natif Android.</li>
+            <li><strong>Marque et modèle conservés au remplacement.</strong> Lors d'un remplacement de composant, les valeurs existantes sont pré-remplies dans le formulaire.</li>
+            <li><strong>Statistiques sans km initiaux.</strong> Les km parcourus avant l'ajout du vélo à BikeHealth ne sont plus comptabilisés dans les statistiques (ils restent utilisés pour le calcul d'usure des composants).</li>
+            <li>Corrections de bugs mineurs et améliorations de stabilité.</li>
+          </ul>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+    ============================================================
+    Fin du bloc à réactiver
+    ============================================================
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo-192.png" alt="" width="32" height="32">
+            <span>BikeHealth</span>
+          </div>
+          <p class="footer-tagline">L'app qui prend soin de ton vélo, en silence.</p>
+        </div>
+
+        <div>
+          <h4>Produit</h4>
+          <ul class="footer-list">
+            <li><a href="/#features">Fonctionnalités</a></li>
+            <li><a href="/release-notes">Notes de version</a></li>
+            <li><a href="mailto:contact@bikehealth.fr?subject=BikeHealth%20%E2%80%94%20Notification%20de%20lancement&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20%C3%AAtre%20tenu%20au%20courant%20de%20la%20sortie%20publique%20de%20BikeHealth.%0A%0AMerci%20!">Notification de lancement</a></li>
+            <li><a href="mailto:contact@bikehealth.fr">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Légal</h4>
+          <ul class="footer-list">
+            <li><a href="/cgu">Conditions d'utilisation</a></li>
+            <li><a href="/confidentialite">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 BikeHealth · Fait avec soin pour les cyclistes.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
