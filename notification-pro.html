@@ -308,8 +308,10 @@
             })
           });
 
+          setLoading(false);
           form.hidden = true;
           successBlock.hidden = false;
+          successBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } catch (err) {
           setLoading(false);
           showError('Oups, l\'envoi a échoué. Tu peux réessayer ou nous écrire à contact@bikehealth.fr.');

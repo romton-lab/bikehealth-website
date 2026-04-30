@@ -896,6 +896,11 @@ section {
   gap: var(--space-4);
 }
 
+.notify-form[hidden],
+.form-success[hidden] {
+  display: none;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
