@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /404
+Disallow: /notification
+Disallow: /notification-pro
 
 Sitemap: https://bikehealth.fr/sitemap.xml

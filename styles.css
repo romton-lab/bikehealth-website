@@ -869,6 +869,208 @@ section {
 }
 
 /* ==========================================================================
+   Page Notification (formulaire pré-inscription)
+   ========================================================================== */
+
+.form-page {
+  padding: var(--space-7) 0 var(--space-7);
+}
+
+.form-content {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.form-content h1 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+  margin-bottom: var(--space-3);
+}
+
+.form-content .lead {
+  margin-bottom: var(--space-6);
+}
+
+.notify-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-group label .required {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.form-group label .optional {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 0.8125rem;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 96px;
+  line-height: 1.5;
+}
+
+.form-group input[type="email"]::placeholder,
+.form-group input[type="text"]::placeholder,
+.form-group input[type="url"]::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="text"]:focus,
+.form-group input[type="url"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(184, 94, 40, 0.15);
+}
+
+.form-checkbox {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background-color: var(--color-surface-warm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.form-checkbox label {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form-checkbox label .hint {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.notify-form .btn {
+  margin-top: var(--space-2);
+  position: relative;
+  align-self: flex-start;
+}
+
+.notify-form .btn .btn-loader {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+.notify-form .btn.is-loading .btn-label {
+  visibility: hidden;
+}
+
+.notify-form .btn.is-loading .btn-loader {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.form-error {
+  color: #B83A2A;
+  font-size: 0.9375rem;
+  margin: 0;
+  min-height: 1.5em;
+}
+
+.form-error:empty {
+  display: none;
+}
+
+.form-success {
+  text-align: center;
+  padding: var(--space-5) 0;
+}
+
+.form-success .success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: rgba(61, 107, 53, 0.12);
+  color: var(--color-ok);
+  margin-bottom: var(--space-4);
+}
+
+.form-success h2 {
+  margin-bottom: var(--space-3);
+}
+
+.form-success p {
+  color: var(--color-text-muted);
+  max-width: 32em;
+  margin: 0 auto var(--space-5);
+}
+
+/* ==========================================================================
    Accessibilité
    ========================================================================== */
 

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Être notifié · BikeHealth</title>
+  <meta name="description" content="Inscris-toi pour être prévenu dès la sortie publique de BikeHealth.">
+  <meta name="theme-color" content="#F4EFE6">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" type="image/png" href="/assets/favicon-48.png">
+  <link rel="apple-touch-icon" href="/assets/logo-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BikeHealth">
+  <meta property="og:title" content="Être notifié · BikeHealth">
+  <meta property="og:description" content="Inscris-toi pour être prévenu dès la sortie publique de BikeHealth.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://bikehealth.fr/assets/logo-192.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Être notifié · BikeHealth">
+  <meta name="twitter:description" content="Inscris-toi pour être prévenu dès la sortie publique de BikeHealth.">
+  <meta name="twitter:image" content="https://bikehealth.fr/assets/logo-192.png">
+
+  <!-- Cloudflare Web Analytics (privacy-friendly, no cookies, no consent banner) -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "7aa0b101f73443539f845625f7cd3bb3"}'></script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="/" class="nav-brand" aria-label="Accueil BikeHealth">
+        <img src="/assets/logo-192.png" alt="" width="36" height="36">
+        <span>BikeHealth</span>
+      </a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="/#features">Fonctionnalités</a></li>
+          <li><a href="/#comment">Comment ça marche</a></li>
+          <li><a href="/#pro">Pro</a></li>
+          <li><a href="/release-notes">Notes de version</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="/notification" aria-current="page">Être notifié</a>
+    </div>
+  </header>
+
+  <main class="form-page">
+    <div class="container">
+      <div class="form-content">
+        <span class="eyebrow">Sortie prochaine</span>
+        <h1>Sois parmi les premiers à essayer BikeHealth.</h1>
+        <p class="lead">L'app arrive prochainement. Laisse ton email pour être prévenu·e dès la sortie publique. Pas de pub, pas de tracker, pas de partage de tes données.</p>
+
+        <form id="notificationForm" class="notify-form" novalidate>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="prenom@exemple.com">
+          </div>
+
+          <div class="form-group">
+            <label for="firstName">Prénom <span class="optional">(optionnel)</span></label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              autocomplete="given-name"
+              maxlength="40"
+              placeholder="Pour qu'on s'adresse à toi par ton prénom">
+          </div>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="rgpd" name="rgpd" required>
+            <label for="rgpd">
+              J'accepte d'être contacté·e par email pour la sortie publique de BikeHealth.
+              <span class="hint">Tes données sont stockées uniquement dans le but de t'envoyer la notification de lancement. Voir la <a href="/confidentialite">politique de confidentialité</a>.</span>
+            </label>
+          </div>
+
+          <!-- Honeypot anti-spam (champ caché, doit rester vide) -->
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+            <span class="btn-label">M'inscrire</span>
+            <span class="btn-loader" aria-hidden="true"></span>
+          </button>
+
+          <p class="form-error" id="formError" role="alert" aria-live="polite"></p>
+        </form>
+
+        <div id="successBlock" class="form-success" role="status" aria-live="polite" hidden>
+          <div class="success-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h2>Merci, c'est noté !</h2>
+          <p>On te tient au courant dès que BikeHealth est disponible. À très vite sur ton vélo.</p>
+          <a class="btn btn-secondary btn-large" href="/">Retour à l'accueil</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="/assets/logo-192.png" alt="" width="32" height="32">
+            <span>BikeHealth</span>
+          </div>
+          <p class="footer-tagline">L'app qui prend soin de ton vélo, en silence.</p>
+        </div>
+
+        <div>
+          <h4>Produit</h4>
+          <ul class="footer-list">
+            <li><a href="/#features">Fonctionnalités</a></li>
+            <li><a href="/release-notes">Notes de version</a></li>
+            <li><a href="/notification">Notification de lancement</a></li>
+            <li><a href="mailto:contact@bikehealth.fr">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Légal</h4>
+          <ul class="footer-list">
+            <li><a href="/cgu">Conditions d'utilisation</a></li>
+            <li><a href="/confidentialite">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 BikeHealth · Fait avec soin pour les cyclistes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // ========================================================================
+      // Apps Script endpoint URL
+      // À remplacer par l'URL générée lors du déploiement de l'Apps Script
+      // (Extensions > Apps Script > Deploy as Web App > "Anyone, even anonymous")
+      // ========================================================================
+      const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxB8MsWmqbWdTaPY6WHANBXZpNaftfmfEkyEo8-A4veReqPCL7hQM7729kIyeUj-v3k/exec';
+
+      const form = document.getElementById('notificationForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const formError = document.getElementById('formError');
+      const successBlock = document.getElementById('successBlock');
+
+      // Détection de la source d'origine (dernière page visitée sur le site)
+      function detectSource() {
+        try {
+          const ref = document.referrer;
+          if (!ref) return 'direct';
+          const url = new URL(ref);
+          if (url.hostname !== window.location.hostname) return 'external';
+          const path = url.pathname.replace(/\/$/, '') || '/';
+          if (path === '/' || path === '/index.html') return 'home';
+          if (path.startsWith('/release-notes')) return 'release-notes';
+          if (path.startsWith('/cgu')) return 'cgu';
+          if (path.startsWith('/confidentialite')) return 'confidentialite';
+          if (path.startsWith('/404')) return '404';
+          return path;
+        } catch (e) {
+          return 'unknown';
+        }
+      }
+
+      function setLoading(isLoading) {
+        submitBtn.disabled = isLoading;
+        submitBtn.classList.toggle('is-loading', isLoading);
+      }
+
+      function showError(message) {
+        formError.textContent = message;
+      }
+
+      function clearError() {
+        formError.textContent = '';
+      }
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        clearError();
+
+        const email = form.email.value.trim();
+        const firstName = form.firstName.value.trim();
+        const rgpd = form.rgpd.checked;
+        const honeypot = form.website.value.trim();
+
+        // Validation basique
+        if (!email) {
+          showError('Merci de renseigner ton email.');
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          showError('Cette adresse email ne semble pas valide.');
+          return;
+        }
+        if (!rgpd) {
+          showError('Merci de cocher la case d\'acceptation pour continuer.');
+          return;
+        }
+
+        // Honeypot : si rempli, on simule un succès silencieux (anti-bot)
+        if (honeypot) {
+          form.hidden = true;
+          successBlock.hidden = false;
+          return;
+        }
+
+        if (APPS_SCRIPT_URL === 'REPLACE_WITH_APPS_SCRIPT_URL') {
+          showError('Le formulaire n\'est pas encore connecté. Réessaie dans quelques instants.');
+          return;
+        }
+
+        setLoading(true);
+
+        try {
+          // Note : on n'utilise pas Content-Type: application/json pour éviter le
+          // preflight CORS (Apps Script ne le gère pas). Avec text/plain, c'est
+          // une "simple request" et le POST passe directement.
+          await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({
+              email: email,
+              firstName: firstName,
+              rgpd: rgpd ? 'oui' : 'non',
+              source: detectSource(),
+              userAgent: navigator.userAgent
+            })
+          });
+
+          // Avec mode no-cors on ne peut pas lire la réponse,
+          // on assume succès si le fetch n'a pas throw.
+          form.hidden = true;
+          successBlock.hidden = false;
+        } catch (err) {
+          setLoading(false);
+          showError('Oups, l\'envoi a échoué. Tu peux réessayer ou nous écrire à contact@bikehealth.fr.');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
