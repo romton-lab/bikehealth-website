@@ -1204,14 +1204,14 @@ section {
   gap: var(--space-3);
 }
 
-/* Radio group (segmentation rider type) */
-.radio-group {
+/* Choice group (segmentation rider type, multi-select) */
+.choice-group {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
 }
 
-.radio-option {
+.choice-option {
   display: flex;
   align-items: center;
   gap: var(--space-3);
@@ -1227,12 +1227,13 @@ section {
   transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
-.radio-option:hover {
+.choice-option:hover {
   border-color: var(--color-text-muted);
   background-color: var(--color-surface-warm);
 }
 
-.radio-option input[type="radio"] {
+.choice-option input[type="checkbox"],
+.choice-option input[type="radio"] {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
@@ -1241,7 +1242,7 @@ section {
   cursor: pointer;
 }
 
-.radio-option:has(input[type="radio"]:checked) {
+.choice-option:has(input:checked) {
   border-color: var(--color-accent);
   background-color: rgba(184, 94, 40, 0.05);
 }

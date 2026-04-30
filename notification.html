@@ -95,22 +95,22 @@
           </div>
 
           <div class="form-group">
-            <label>Tu roules plutôt… <span class="optional">(optionnel)</span></label>
-            <div class="radio-group">
-              <label class="radio-option">
-                <input type="radio" name="riderType" value="velotaf">
+            <label>Tu roules plutôt… <span class="optional">(plusieurs choix possibles)</span></label>
+            <div class="choice-group">
+              <label class="choice-option">
+                <input type="checkbox" name="riderType" value="velotaf">
                 🚴 Vélotaf : je roule tous les jours pour aller au boulot
               </label>
-              <label class="radio-option">
-                <input type="radio" name="riderType" value="sport">
+              <label class="choice-option">
+                <input type="checkbox" name="riderType" value="sport">
                 🏅 Sport : sorties régulières, je fais des km
               </label>
-              <label class="radio-option">
-                <input type="radio" name="riderType" value="balade">
+              <label class="choice-option">
+                <input type="checkbox" name="riderType" value="balade">
                 🌿 Balade : occasionnel, pour le plaisir
               </label>
-              <label class="radio-option">
-                <input type="radio" name="riderType" value="vae">
+              <label class="choice-option">
+                <input type="checkbox" name="riderType" value="vae">
                 ⚡ VAE : je roule en vélo à assistance électrique
               </label>
             </div>
@@ -286,7 +286,7 @@
             body: JSON.stringify({
               email: email,
               firstName: firstName,
-              riderType: form.querySelector('input[name="riderType"]:checked')?.value || '',
+              riderType: [...form.querySelectorAll('input[name="riderType"]:checked')].map(function (i) { return i.value; }).join(','),
               rgpd: rgpd ? 'oui' : 'non',
               source: detectSource(),
               userAgent: navigator.userAgent
