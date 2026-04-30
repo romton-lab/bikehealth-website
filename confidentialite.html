@@ -70,10 +70,10 @@
       <article class="legal-content">
 
         <h1>Politique de confidentialité</h1>
-        <p class="legal-meta">Dernière mise à jour : 29 avril 2026</p>
+        <p class="legal-meta">Dernière mise à jour : 30 avril 2026</p>
 
         <blockquote>
-          <p><strong>En une phrase :</strong> BikeHealth n'a pas de serveur. Tes données restent sur ton téléphone, sauf si <em>toi</em> choisis de connecter un service tiers (Strava, Google Places). Aucun analytics utilisateur, aucune pub, aucun profilage, aucune revente.</p>
+          <p><strong>En une phrase :</strong> BikeHealth n'a pas de serveur. Tes données restent sur ton téléphone, sauf si <em>toi</em> choisis de connecter un service tiers (Strava, Google Places). Un rapport de crash anonyme est envoyé à Firebase pour identifier les bugs — désactivable à tout moment dans les paramètres. Aucun analytics utilisateur, aucune pub, aucun profilage, aucune revente.</p>
         </blockquote>
 
         <h2>1. Préambule</h2>
@@ -103,7 +103,7 @@
         <p>Selon les paramètres de sauvegarde Android de ton appareil, ces données peuvent être incluses dans la sauvegarde automatique vers ton compte Google. Ce comportement est géré par Android, hors du contrôle de BikeHealth.</p>
 
         <h2>4. Données transmises à des tiers depuis l'app (avec ton consentement)</h2>
-        <p>Tu peux utiliser BikeHealth sans <strong>aucune</strong> transmission à un tiers. Si tu n'actives pas Strava et ne renseignes pas d'atelier favori, l'app ne fait aucune requête réseau.</p>
+        <p>Tu peux utiliser BikeHealth sans aucune transmission à un tiers commercial, au-delà du rapport de crash anonyme décrit en section 5. Si tu n'actives pas Strava, ne renseignes pas d'atelier favori et désactives le rapport de crash, l'app ne fait aucune requête réseau.</p>
         <p>Si tu actives une fonctionnalité, les transmissions suivantes ont lieu :</p>
 
         <h3>Strava</h3>
@@ -129,7 +129,28 @@
           <li><strong>Reçu de Google :</strong> image PNG de la carte (affichée et mise en cache temporaire, pas stockée durablement).</li>
         </ul>
 
-        <h2>5. Données collectées sur le site web</h2>
+        <h2>5. Rapport de crash anonyme (Firebase Crashlytics)</h2>
+        <p>Pour identifier et corriger les bugs en conditions réelles, BikeHealth utilise <strong>Firebase Crashlytics</strong>, un service de Google. Cette collecte est <strong>activée par défaut</strong> en version publique de l'app, mais tu peux la désactiver à tout moment dans <em>Profil &gt; Paramètres &gt; Données &gt; « Envoyer les rapports de crash anonymes »</em>.</p>
+        <p>Quand l'app crashe, Crashlytics envoie automatiquement à Firebase :</p>
+        <ul>
+          <li><strong>Stack trace technique</strong> du crash (code, fichiers, numéros de ligne).</li>
+          <li><strong>Informations sur l'appareil :</strong> modèle, version d'Android, mémoire disponible (collectées automatiquement par le SDK).</li>
+          <li><strong>Informations contextuelles non identifiantes :</strong> version de l'app, mode utilisateur (Simple / Avancé), nombre de vélos enregistrés.</li>
+          <li><strong>Logs techniques contextuels :</strong> les dernières actions techniques exécutées avant le crash (ex : « démarrage app », « génération trajets habituels », « ouverture dialog entretien »).</li>
+          <li><strong>ANRs</strong> (Application Not Responding) : également capturés automatiquement pour détecter les blocages d'interface.</li>
+        </ul>
+        <p>Les données suivantes ne sont <strong>jamais</strong> envoyées à Firebase :</p>
+        <ul>
+          <li>Ton prénom, ton email, ou tout identifiant nominatif.</li>
+          <li>Les noms personnalisés que tu donnes à tes vélos.</li>
+          <li>Le contenu de tes trajets, entretiens, notes ou rappels.</li>
+          <li>L'adresse, le téléphone ou les coordonnées GPS de ton atelier favori.</li>
+          <li>Tes tokens Strava ou identifiants de services tiers.</li>
+        </ul>
+        <p>Aucun autre service Firebase n'est actif : <strong>pas de Firebase Analytics</strong> (aucun écran visité, aucune session ou comportement utilisateur tracké), pas de Performance Monitoring, pas de Remote Config, pas d'A/B testing. Seule la fonction Crashlytics est utilisée.</p>
+        <p><strong>Politique Firebase :</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+        <h2>6. Données collectées sur le site web</h2>
         <p>Le site <a href="https://bikehealth.fr">bikehealth.fr</a> utilise <strong>Cloudflare Web Analytics</strong> pour mesurer son audience de manière respectueuse de la vie privée.</p>
         <ul>
           <li><strong>Aucun cookie</strong> n'est posé.</li>
@@ -139,10 +160,9 @@
           <li><strong>Politique Cloudflare :</strong> <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">cloudflare.com/privacypolicy</a></li>
         </ul>
 
-        <h2>6. Ce que BikeHealth ne fait pas</h2>
+        <h2>7. Ce que BikeHealth ne fait pas</h2>
         <ul>
-          <li>Aucun rapport de crash automatique (pas de Firebase Crashlytics, pas de Sentry).</li>
-          <li>Aucun outil d'analytics utilisateur dans l'app (pas de Google Analytics, pas de SDK Facebook, pas de Mixpanel, pas d'AppsFlyer).</li>
+          <li>Aucun outil d'analytics utilisateur (pas de Firebase Analytics, pas de Google Analytics, pas de SDK Facebook, pas de Mixpanel, pas d'AppsFlyer). Seule la fonction Crashlytics de Firebase est utilisée — uniquement pour les rapports de crash, pas pour tracker ton comportement dans l'app.</li>
           <li>Aucun tracker publicitaire, aucune publicité.</li>
           <li>Aucun cookie sur le site web (à l'exception des cookies techniques temporaires nécessaires au flux OAuth Strava, gérés par les sites concernés).</li>
           <li>Aucun partage de tes données avec des tiers commerciaux.</li>
@@ -150,7 +170,7 @@
           <li>Aucune revente de données.</li>
         </ul>
 
-        <h2>7. Permissions Android et leur utilisation</h2>
+        <h2>8. Permissions Android et leur utilisation</h2>
         <table>
           <thead>
             <tr>
@@ -169,7 +189,7 @@
             </tr>
             <tr>
               <td><code>INTERNET</code></td>
-              <td>Connexion Strava (OAuth + import d'activités), recherche atelier Google Places, mini-carte Google Maps Static.</td>
+              <td>Connexion Strava (OAuth + import d'activités), recherche atelier Google Places, mini-carte Google Maps Static, envoi des rapports de crash à Firebase Crashlytics.</td>
             </tr>
             <tr>
               <td><code>RECEIVE_BOOT_COMPLETED</code></td>
@@ -182,25 +202,27 @@
           </tbody>
         </table>
 
-        <h2>8. Tes droits</h2>
+        <h2>9. Tes droits</h2>
         <p>Conformément au RGPD, tu disposes des droits suivants :</p>
         <ul>
           <li><strong>Accès :</strong> toutes tes données sont visibles dans l'app (fiches vélos, historique des trajets, entretiens, etc.).</li>
           <li><strong>Rectification :</strong> tu peux modifier toutes tes données directement dans l'app à tout moment.</li>
           <li><strong>Suppression d'un vélo :</strong> action « Supprimer définitivement » disponible depuis l'écran Archives.</li>
           <li><strong>Portabilité :</strong> une fonction d'export au format JSON est en cours de développement et sera disponible dans une prochaine version. En attendant, écris-nous à <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a> si tu as besoin d'une copie de tes données.</li>
+          <li><strong>Opposition au rapport de crash :</strong> toggle « Envoyer les rapports de crash anonymes » dans <em>Profil &gt; Paramètres &gt; Données</em>. Une fois désactivé, plus aucune donnée n'est envoyée à Firebase, y compris les crashs.</li>
           <li><strong>Désinstallation :</strong> supprimer BikeHealth efface l'ensemble de tes données locales (sauf si Android a sauvegardé une copie sur ton compte Google selon tes paramètres).</li>
         </ul>
         <p>Pour toute question ou réclamation : <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a>. Tu peux également introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>).</p>
 
-        <h2>9. Hébergement</h2>
+        <h2>10. Hébergement</h2>
         <p>Le site <a href="https://bikehealth.fr">bikehealth.fr</a> est hébergé par <strong>Cloudflare, Inc.</strong> (101 Townsend St, San Francisco, CA 94107, États-Unis) sur l'infrastructure Cloudflare Workers.</p>
         <p>L'app Android est distribuée via <strong>GitHub, Inc.</strong> (88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis) sur la plateforme GitHub Releases.</p>
+        <p>Les rapports de crash sont traités par <strong>Google LLC / Firebase</strong> (1600 Amphitheatre Parkway, Mountain View, CA 94043, États-Unis). Voir la politique Firebase pour le détail des sous-traitants et des transferts.</p>
 
-        <h2>10. Modifications</h2>
+        <h2>11. Modifications</h2>
         <p>Cette politique peut être amenée à évoluer (nouvelles fonctionnalités, intégrations supplémentaires, changement de prestataire technique). Toute modification substantielle sera signalée via une mise à jour de la date en tête de page et, le cas échéant, une notification dans l'app.</p>
 
-        <h2>11. Contact</h2>
+        <h2>12. Contact</h2>
         <p>Pour toute question relative à cette politique ou à tes données, écris-nous à <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a>.</p>
 
       </article>
