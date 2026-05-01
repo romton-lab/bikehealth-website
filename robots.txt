@@ -1,26 +1,12 @@
-User-agent: *
-Allow: /
-Content-Signal: search=yes, ai-train=no
-
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
+# Cloudflare auto-injecte un bloc "Managed Content" en tête du fichier servi
+# (User-agent: *, Content-Signal: search=yes,ai-train=no, et les disallows
+# pour GPTBot, ClaudeBot, CCBot, Amazonbot, Bytespider, Applebot-Extended,
+# Google-Extended, meta-externalagent, etc.). Ne pas dupliquer ici.
 
 User-agent: anthropic-ai
 Disallow: /
 
-User-agent: CCBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
 User-agent: PerplexityBot
-Disallow: /
-
-User-agent: Applebot-Extended
 Disallow: /
 
 Sitemap: https://bikehealth.fr/sitemap.xml
