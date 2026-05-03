@@ -291,10 +291,10 @@ section {
 }
 
 /* CTA principale dans la nav : caché sur mobile, visible sur desktop.
-   gap: 0 désactive l'espacement flex entre le texte "Être notifié" et le span ".nav-cta-suffix" pour que l'espace dans le span fasse l'espacement (un seul espace visible). */
+   On force inline-block (pas inline-flex hérité de .btn) pour que le span
+   ".nav-cta-suffix" et son espace de tête s'affichent en flux texte normal. */
 .nav-cta {
   display: none;
-  gap: 0;
 }
 
 /* CTA mobile : caché par défaut, affiché dans le panneau hamburger */
@@ -440,7 +440,7 @@ section {
   }
 
   .nav-cta {
-    display: inline-flex;
+    display: inline-block;
   }
 
   .menu-cta,
