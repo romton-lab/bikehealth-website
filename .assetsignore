@@ -17,3 +17,7 @@ README.md
 *.log
 .DS_Store
 Thumbs.db
+
+# OG image regen template (kept in repo, not deployed)
+og-template.html
+.tmp_*
