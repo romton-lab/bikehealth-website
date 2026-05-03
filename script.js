@@ -21,4 +21,11 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && nav.classList.contains('is-open')) setOpen(false);
   });
+
+  // Language toggle: persist user choice so future visits respect it
+  document.querySelectorAll('.lang-toggle a[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('bh-lang', a.getAttribute('data-lang')); } catch (e) {}
+    });
+  });
 })();
