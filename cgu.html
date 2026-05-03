@@ -7,6 +7,11 @@
   <meta name="description" content="Les conditions d'utilisation de l'application BikeHealth et du site bikehealth.fr.">
   <meta name="theme-color" content="#F4EFE6">
   <link rel="canonical" href="https://bikehealth.fr/cgu">
+  <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/cgu">
+  <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/terms">
+
+  <!-- Auto-redirect to EN if browser language is not French (skipped if user has explicit FR preference). Maps /cgu to /en/terms. -->
+  <script>(function(){try{var p=location.pathname;if(p.indexOf('/en/')===0||p==='/en')return;var s=localStorage.getItem('bh-lang');if(s==='fr')return;var l=(navigator.language||'').toLowerCase();if(!(s==='en'||(!s&&!l.startsWith('fr'))))return;var m={'/cgu':'/terms','/confidentialite':'/privacy'};var t=m[p]||p;location.replace('/en'+(t==='/'?'/':t))}catch(e){}})();</script>
 
   <link rel="icon" type="image/png" href="assets/favicon-48.png">
   <link rel="apple-touch-icon" href="assets/logo-192.png">
@@ -57,6 +62,11 @@
           <li><a href="/#pro">Pro</a></li>
           <li><a href="/release-notes">Notes de version</a></li>
         </ul>
+        <div class="lang-toggle" aria-label="Langue">
+          <a href="/cgu" aria-current="true" data-lang="fr">FR</a>
+          <span aria-hidden="true">/</span>
+          <a href="/en/terms" data-lang="en">EN</a>
+        </div>
       </nav>
       <div class="nav-end">
         <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix"> au lancement</span></a>
