@@ -15,9 +15,9 @@
   --color-accent-dark: #8F4A1E;
   --color-ok: #3D6B35;
 
-  /* Typographie */
-  --font-display: "Fraunces", "Lora", Georgia, "Times New Roman", serif;
-  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Typographie : Manrope partout (cohérence avec l'app), 400 / 500 / 700 */
+  --font-display: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Échelle d'espacement */
   --space-1: 0.25rem;
@@ -102,17 +102,15 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.15;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   margin: 0 0 var(--space-3);
   color: var(--color-text);
-  font-optical-sizing: auto;
 }
 
 h1 {
   font-size: clamp(2.25rem, 5vw + 1rem, 3.75rem);
-  font-weight: 500;
 }
 
 h2 {
@@ -122,7 +120,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
@@ -139,7 +137,7 @@ p {
 .eyebrow {
   display: inline-block;
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-accent);
@@ -189,7 +187,7 @@ section {
   gap: var(--space-2);
   padding: 0.875rem 1.75rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: var(--radius-md);
   transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
@@ -251,7 +249,7 @@ section {
   gap: var(--space-2);
   font-family: var(--font-display);
   font-size: 1.375rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
 }
 
@@ -327,7 +325,7 @@ section {
 
 .lang-toggle a[aria-current="true"] {
   color: var(--color-text);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .lang-toggle span[aria-hidden="true"] {
@@ -403,7 +401,7 @@ section {
   text-align: center;
   padding: var(--space-3);
   border-radius: var(--radius-md);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
 }
 
@@ -718,7 +716,7 @@ section {
 .badge {
   display: inline-block;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-accent);
@@ -803,7 +801,7 @@ section {
   gap: var(--space-2);
   font-family: var(--font-display);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--space-2);
 }
 
@@ -821,7 +819,7 @@ section {
 
 .footer h3 {
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -929,7 +927,7 @@ section {
 }
 
 .legal-content th {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-text-muted);
   font-size: 0.8125rem;
   letter-spacing: 0.04em;
@@ -977,7 +975,7 @@ section {
 .release-version {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
   margin: 0;
 }
@@ -990,7 +988,7 @@ section {
 .release-tag {
   display: inline-block;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 0.25rem 0.625rem;
@@ -1026,7 +1024,7 @@ section {
 
 .error-code {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(6rem, 18vw, 10rem);
   line-height: 1;
   color: var(--color-accent);
@@ -1091,7 +1089,7 @@ section {
 
 .form-group label {
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-text);
 }
 
