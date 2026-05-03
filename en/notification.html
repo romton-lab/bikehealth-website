@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<!-- last-synced-with-fr: 2026-05-03 -->
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Être notifié · BikeHealth</title>
-  <meta name="description" content="Inscris-toi pour être prévenu dès la sortie publique de BikeHealth.">
+  <title>Get notified · BikeHealth</title>
+  <meta name="description" content="Sign up to be notified at the public launch of BikeHealth.">
   <meta name="theme-color" content="#F4EFE6">
   <meta name="robots" content="noindex">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/notification">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/notification">
-
-  <!-- Auto-redirect to EN if browser language is not French (skipped if user has explicit FR preference) -->
-  <script>(function(){try{var p=location.pathname;if(p.indexOf('/en/')===0||p==='/en')return;var s=localStorage.getItem('bh-lang');if(s==='fr')return;var l=(navigator.language||'').toLowerCase();if(!(s==='en'||(!s&&!l.startsWith('fr'))))return;var m={'/cgu':'/terms','/confidentialite':'/privacy'};var t=m[p]||p;location.replace('/en'+(t==='/'?'/':t))}catch(e){}})();</script>
 
   <link rel="icon" type="image/png" href="/assets/favicon-48.png">
   <link rel="apple-touch-icon" href="/assets/logo-192.png">
@@ -27,17 +25,18 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BikeHealth">
-  <meta property="og:title" content="Être notifié · BikeHealth">
-  <meta property="og:description" content="Inscris-toi pour être prévenu dès la sortie publique de BikeHealth.">
-  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Get notified · BikeHealth">
+  <meta property="og:description" content="Sign up to be notified at the public launch of BikeHealth.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
   <meta property="og:image" content="https://bikehealth.fr/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Être notifié · BikeHealth">
-  <meta name="twitter:description" content="Inscris-toi pour être prévenu dès la sortie publique de BikeHealth.">
+  <meta name="twitter:title" content="Get notified · BikeHealth">
+  <meta name="twitter:description" content="Sign up to be notified at the public launch of BikeHealth.">
   <meta name="twitter:image" content="https://bikehealth.fr/assets/og-image.jpg">
 
   <!-- Cloudflare Web Analytics (privacy-friendly, no cookies, no consent banner) -->
@@ -49,27 +48,27 @@
 
   <header class="nav">
     <div class="container nav-inner">
-      <a href="/" class="nav-brand" aria-label="Accueil BikeHealth">
+      <a href="/en/" class="nav-brand" aria-label="BikeHealth home">
         <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="36" height="36"></picture>
         <span>BikeHealth</span>
       </a>
-      <nav id="primary-nav" aria-label="Navigation principale">
-        <a class="menu-cta" href="/notification" aria-current="page">Être notifié au lancement</a>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a class="menu-cta" href="/en/notification" aria-current="page">Get notified at launch</a>
         <ul class="nav-links">
-          <li><a href="/#features">Fonctionnalités</a></li>
-          <li><a href="/#comment">Comment ça marche</a></li>
-          <li><a href="/#pro">Pro</a></li>
-          <li><a href="/release-notes">Notes de version</a></li>
+          <li><a href="/en/#features">Features</a></li>
+          <li><a href="/en/#how">How it works</a></li>
+          <li><a href="/en/#pro">Pro</a></li>
+          <li><a href="/en/release-notes">Release notes</a></li>
         </ul>
-        <div class="lang-toggle" aria-label="Langue">
-          <a href="/notification" aria-current="true" data-lang="fr">FR</a>
+        <div class="lang-toggle" aria-label="Language">
+          <a href="/notification" data-lang="fr">FR</a>
           <span aria-hidden="true">/</span>
-          <a href="/en/notification" data-lang="en">EN</a>
+          <a href="/en/notification" aria-current="true" data-lang="en">EN</a>
         </div>
       </nav>
       <div class="nav-end">
-        <a class="btn btn-primary nav-cta" href="/notification" aria-current="page">Être notifié</a>
-        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+        <a class="btn btn-primary nav-cta" href="/en/notification" aria-current="page">Get notified</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="6" x2="21" y2="6"/>
             <line x1="3" y1="12" x2="21" y2="12"/>
@@ -83,9 +82,9 @@
   <main class="form-page">
     <div class="container">
       <div class="form-content">
-        <span class="eyebrow">Sortie prochaine</span>
-        <h1>Sois parmi les premiers à essayer BikeHealth.</h1>
-        <p class="lead">L'app arrive prochainement. Laisse ton email pour être prévenu·e dès la sortie publique. Pas de pub, pas de tracker, pas de partage de tes données.</p>
+        <span class="eyebrow">Coming soon</span>
+        <h1>Be among the first to try BikeHealth.</h1>
+        <p class="lead">The app is launching soon. Drop your email to be notified at public launch. No ads, no tracking, no data sharing.</p>
 
         <form id="notificationForm" class="notify-form" novalidate>
           <div class="form-group">
@@ -96,38 +95,38 @@
               name="email"
               required
               autocomplete="email"
-              placeholder="prenom@exemple.com">
+              placeholder="you@example.com">
           </div>
 
           <div class="form-group">
-            <label for="firstName">Prénom <span class="optional">(optionnel)</span></label>
+            <label for="firstName">First name <span class="optional">(optional)</span></label>
             <input
               type="text"
               id="firstName"
               name="firstName"
               autocomplete="given-name"
               maxlength="40"
-              placeholder="Pour qu'on s'adresse à toi par ton prénom">
+              placeholder="So we can address you by your first name">
           </div>
 
           <div class="form-group">
-            <label>Tu roules plutôt… <span class="optional">(plusieurs choix possibles)</span></label>
+            <label>What kind of riding? <span class="optional">(multiple choices possible)</span></label>
             <div class="choice-group">
               <label class="choice-option">
                 <input type="checkbox" name="riderType" value="velotaf">
-                🚴 Vélotaf : je roule tous les jours pour aller au boulot
+                🚴 Commuter: I ride to work every day
               </label>
               <label class="choice-option">
                 <input type="checkbox" name="riderType" value="sport">
-                🏅 Sport : sorties régulières, je fais des km
+                🏅 Sport: regular rides, I clock the miles
               </label>
               <label class="choice-option">
                 <input type="checkbox" name="riderType" value="balade">
-                🌿 Balade : occasionnel, pour le plaisir
+                🌿 Leisure: occasional, just for fun
               </label>
               <label class="choice-option">
                 <input type="checkbox" name="riderType" value="vae">
-                ⚡ VAE : je roule en vélo à assistance électrique
+                ⚡ E-bike: I ride electric
               </label>
             </div>
           </div>
@@ -135,19 +134,19 @@
           <div class="form-group form-checkbox">
             <input type="checkbox" id="rgpd" name="rgpd" required>
             <label for="rgpd">
-              J'accepte d'être contacté·e par email pour la sortie publique de BikeHealth.
-              <span class="hint">Tes données sont stockées uniquement dans le but de t'envoyer la notification de lancement. Voir la <a href="/confidentialite">politique de confidentialité</a>.</span>
+              I agree to be contacted by email about BikeHealth's public launch.
+              <span class="hint">Your data is stored solely to send you the launch notification. See the <a href="/en/privacy">privacy policy</a>.</span>
             </label>
           </div>
 
-          <!-- Honeypot anti-spam (champ caché, doit rester vide) -->
+          <!-- Honeypot anti-spam (hidden field, must remain empty) -->
           <div class="form-honeypot" aria-hidden="true">
-            <label for="website">Ne pas remplir</label>
+            <label for="website">Do not fill</label>
             <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
           </div>
 
           <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
-            <span class="btn-label">M'inscrire</span>
+            <span class="btn-label">Sign me up</span>
             <span class="btn-loader" aria-hidden="true"></span>
           </button>
 
@@ -161,11 +160,11 @@
               <polyline points="22 4 12 14.01 9 11.01"/>
             </svg>
           </div>
-          <h2>Merci, c'est noté !</h2>
-          <p>On te prévient dès que BikeHealth est disponible. D'ici là, si tu connais un cycliste qui galère avec l'entretien de son vélo, passe-lui le lien, ça l'aidera autant que toi.</p>
+          <h2>Thanks, you're on the list!</h2>
+          <p>We'll let you know as soon as BikeHealth is available. In the meantime, if you know a cyclist struggling with bike maintenance, share the link with them, it'll help them as much as it'll help you.</p>
           <div class="success-actions">
-            <a class="btn btn-primary btn-large" id="shareBtn" href="https://bikehealth.fr/notification">Partager BikeHealth</a>
-            <a class="btn btn-secondary btn-large" href="/">Retour à l'accueil</a>
+            <a class="btn btn-primary btn-large" id="shareBtn" href="https://bikehealth.fr/en/notification">Share BikeHealth</a>
+            <a class="btn btn-secondary btn-large" href="/en/">Back to home</a>
           </div>
         </div>
       </div>
@@ -180,30 +179,30 @@
             <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="32" height="32"></picture>
             <span>BikeHealth</span>
           </div>
-          <p class="footer-tagline">L'app qui prend soin de ton vélo, en silence.</p>
+          <p class="footer-tagline">The app that takes care of your bike, silently.</p>
         </div>
 
         <div>
-          <h3>Produit</h3>
+          <h3>Product</h3>
           <ul class="footer-list">
-            <li><a href="/#features">Fonctionnalités</a></li>
-            <li><a href="/release-notes">Notes de version</a></li>
-            <li><a href="/notification">Notification de lancement</a></li>
+            <li><a href="/en/#features">Features</a></li>
+            <li><a href="/en/release-notes">Release notes</a></li>
+            <li><a href="/en/notification">Launch notification</a></li>
             <li><a href="mailto:contact@bikehealth.fr">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h3>Légal</h3>
+          <h3>Legal</h3>
           <ul class="footer-list">
-            <li><a href="/cgu">Conditions d'utilisation</a></li>
-            <li><a href="/confidentialite">Politique de confidentialité</a></li>
+            <li><a href="/en/terms">Terms of use</a></li>
+            <li><a href="/en/privacy">Privacy policy</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 BikeHealth · Fait avec soin pour les cyclistes.</span>
+        <span>&copy; 2026 BikeHealth · Made with care for cyclists.</span>
       </div>
     </div>
   </footer>
@@ -211,9 +210,7 @@
   <script>
     (function () {
       // ========================================================================
-      // Apps Script endpoint URL
-      // À remplacer par l'URL générée lors du déploiement de l'Apps Script
-      // (Extensions > Apps Script > Deploy as Web App > "Anyone, even anonymous")
+      // Apps Script endpoint URL (same as FR version)
       // ========================================================================
       const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxB8MsWmqbWdTaPY6WHANBXZpNaftfmfEkyEo8-A4veReqPCL7hQM7729kIyeUj-v3k/exec';
 
@@ -222,18 +219,20 @@
       const formError = document.getElementById('formError');
       const successBlock = document.getElementById('successBlock');
 
-      // Détection de la source d'origine (dernière page visitée sur le site)
+      // Detect referrer source (last page visited on the site)
       function detectSource() {
         try {
           const ref = document.referrer;
           if (!ref) return 'direct';
           const url = new URL(ref);
           if (url.hostname !== window.location.hostname) return 'external';
-          const path = url.pathname.replace(/\/$/, '') || '/';
+          let path = url.pathname.replace(/\/$/, '') || '/';
+          // Strip /en prefix to normalise alongside FR sources
+          if (path.startsWith('/en')) path = path.slice(3) || '/';
           if (path === '/' || path === '/index.html') return 'home';
           if (path.startsWith('/release-notes')) return 'release-notes';
-          if (path.startsWith('/cgu')) return 'cgu';
-          if (path.startsWith('/confidentialite')) return 'confidentialite';
+          if (path.startsWith('/terms') || path.startsWith('/cgu')) return 'terms';
+          if (path.startsWith('/privacy') || path.startsWith('/confidentialite')) return 'privacy';
           if (path.startsWith('/404')) return '404';
           return path;
         } catch (e) {
@@ -263,38 +262,29 @@
         const rgpd = form.rgpd.checked;
         const honeypot = form.website.value.trim();
 
-        // Validation basique
         if (!email) {
-          showError('Merci de renseigner ton email.');
+          showError('Please enter your email.');
           return;
         }
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          showError('Cette adresse email ne semble pas valide.');
+          showError('This email address doesn\'t look valid.');
           return;
         }
         if (!rgpd) {
-          showError('Merci de cocher la case d\'acceptation pour continuer.');
+          showError('Please tick the consent box to continue.');
           return;
         }
 
-        // Honeypot : si rempli, on simule un succès silencieux (anti-bot)
+        // Honeypot: silently "succeed" if filled (anti-bot)
         if (honeypot) {
           form.hidden = true;
           successBlock.hidden = false;
           return;
         }
 
-        if (APPS_SCRIPT_URL === 'REPLACE_WITH_APPS_SCRIPT_URL') {
-          showError('Le formulaire n\'est pas encore connecté. Réessaie dans quelques instants.');
-          return;
-        }
-
         setLoading(true);
 
         try {
-          // Note : on n'utilise pas Content-Type: application/json pour éviter le
-          // preflight CORS (Apps Script ne le gère pas). Avec text/plain, c'est
-          // une "simple request" et le POST passe directement.
           await fetch(APPS_SCRIPT_URL, {
             method: 'POST',
             mode: 'no-cors',
@@ -305,31 +295,29 @@
               riderType: [...form.querySelectorAll('input[name="riderType"]:checked')].map(function (i) { return i.value; }).join(','),
               rgpd: rgpd ? 'oui' : 'non',
               source: detectSource(),
-              lang: 'fr',
+              lang: 'en',
               userAgent: navigator.userAgent
             })
           });
 
-          // Avec mode no-cors on ne peut pas lire la réponse,
-          // on assume succès si le fetch n'a pas throw.
           setLoading(false);
           form.hidden = true;
           successBlock.hidden = false;
           successBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } catch (err) {
           setLoading(false);
-          showError('Oups, l\'envoi a échoué. Tu peux réessayer ou nous écrire à contact@bikehealth.fr.');
+          showError('Oops, submission failed. Please try again or write to contact@bikehealth.fr.');
         }
       });
 
-      // Partage natif si disponible (Web Share API), sinon le href du bouton fait fallback
+      // Native share if available (Web Share API), otherwise the href fallback opens
       document.getElementById('shareBtn')?.addEventListener('click', function (e) {
         if (navigator.share) {
           e.preventDefault();
           navigator.share({
             title: 'BikeHealth',
-            text: 'Une app pour anticiper l\'usure de son vélo. Je trouve ça utile, ça peut t\'intéresser.',
-            url: 'https://bikehealth.fr/notification'
+            text: 'An app to stay ahead of bike wear. I find it useful, you might too.',
+            url: 'https://bikehealth.fr/en/notification'
           }).catch(function () { /* user cancelled */ });
         }
       });
