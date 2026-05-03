@@ -79,7 +79,7 @@
           </div>
         </nav>
         <div class="nav-end">
-          <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix"> au lancement</span></a>
+          <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix">au lancement</span></a>
           <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="3" y1="6" x2="21" y2="6"/>
@@ -149,7 +149,7 @@
           <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="36" height="36"></picture>
           <span>BikeHealth</span>
         </a>
-        <nav id="primary-nav-en" aria-label="Main navigation">
+        <nav id="primary-nav" aria-label="Main navigation">
           <a class="menu-cta" href="/en/notification">Get notified at launch</a>
           <ul class="nav-links">
             <li><a href="/en/#features">Features</a></li>
@@ -164,8 +164,8 @@
           </div>
         </nav>
         <div class="nav-end">
-          <a class="btn btn-primary nav-cta" href="/en/notification">Get notified<span class="nav-cta-suffix"> at launch</span></a>
-          <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-en">
+          <a class="btn btn-primary nav-cta" href="/en/notification">Get notified<span class="nav-cta-suffix">at launch</span></a>
+          <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="3" y1="6" x2="21" y2="6"/>
               <line x1="3" y1="12" x2="21" y2="12"/>
@@ -233,8 +233,10 @@
         var frBlock = document.querySelector('[data-lang-only="fr"]');
         var enBlock = document.querySelector('[data-lang-only="en"]');
         if (isEn) {
-          if (frBlock) frBlock.hidden = true;
+          if (frBlock) frBlock.remove();
           if (enBlock) enBlock.hidden = false;
+        } else {
+          if (enBlock) enBlock.remove();
         }
       } catch (e) {}
     })();
