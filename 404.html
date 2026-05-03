@@ -35,6 +35,20 @@
   <meta name="twitter:description" content="Cette page n'existe pas. Retour à l'accueil de BikeHealth.">
   <meta name="twitter:image" content="https://bikehealth.fr/assets/og-image.jpg">
 
+  <!-- Si la page 404 est servie sur une URL /en/* (cas d'un visiteur perdu sur la zone EN),
+       on bascule l'affichage en anglais en lisant la pathname avant le rendu. -->
+  <script>
+    (function () {
+      try {
+        var isEn = /^\/en(\/|$)/.test(location.pathname);
+        if (isEn) {
+          document.documentElement.lang = 'en';
+          document.title = 'Page not found · BikeHealth';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- Cloudflare Web Analytics (privacy-friendly, no cookies, no consent banner) -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "7aa0b101f73443539f845625f7cd3bb3"}'></script>
 
@@ -42,82 +56,189 @@
 </head>
 <body>
 
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="/" class="nav-brand" aria-label="Accueil BikeHealth">
-        <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="36" height="36"></picture>
-        <span>BikeHealth</span>
-      </a>
-      <nav id="primary-nav" aria-label="Navigation principale">
-        <a class="menu-cta" href="/notification">Être notifié au lancement</a>
-        <ul class="nav-links">
-          <li><a href="/#features">Fonctionnalités</a></li>
-          <li><a href="/#comment">Comment ça marche</a></li>
-          <li><a href="/#pro">Pro</a></li>
-          <li><a href="/release-notes">Notes de version</a></li>
-        </ul>
-      </nav>
-      <div class="nav-end">
-        <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix"> au lancement</span></a>
-        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main class="error-page">
-    <div class="container">
-      <div class="error-content">
-        <p class="error-code" aria-hidden="true">404</p>
-        <h1>Tu t'es perdu en route.</h1>
-        <p class="lead">Cette page n'existe pas, ou n'existe plus. Pas de panique, on rentre au point de départ.</p>
-        <div class="error-actions">
-          <a class="btn btn-primary btn-large" href="/">Revenir à l'accueil</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand">
-            <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="32" height="32"></picture>
-            <span>BikeHealth</span>
-          </div>
-          <p class="footer-tagline">L'app qui prend soin de ton vélo, en silence.</p>
-        </div>
-
-        <div>
-          <h3>Produit</h3>
-          <ul class="footer-list">
+  <!-- ============== Variant FR ============== -->
+  <div data-lang-only="fr">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/" class="nav-brand" aria-label="Accueil BikeHealth">
+          <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="36" height="36"></picture>
+          <span>BikeHealth</span>
+        </a>
+        <nav id="primary-nav" aria-label="Navigation principale">
+          <a class="menu-cta" href="/notification">Être notifié au lancement</a>
+          <ul class="nav-links">
             <li><a href="/#features">Fonctionnalités</a></li>
+            <li><a href="/#comment">Comment ça marche</a></li>
+            <li><a href="/#pro">Pro</a></li>
             <li><a href="/release-notes">Notes de version</a></li>
-            <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Télécharger</a></li>
-            <li><a href="mailto:contact@bikehealth.fr">Contact</a></li>
           </ul>
-        </div>
-
-        <div>
-          <h3>Légal</h3>
-          <ul class="footer-list">
-            <li><a href="/cgu">Conditions d'utilisation</a></li>
-            <li><a href="/confidentialite">Politique de confidentialité</a></li>
-          </ul>
+          <div class="lang-toggle" aria-label="Langue">
+            <a href="/" aria-current="true" data-lang="fr">FR</a>
+            <span aria-hidden="true">/</span>
+            <a href="/en/" data-lang="en">EN</a>
+          </div>
+        </nav>
+        <div class="nav-end">
+          <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix"> au lancement</span></a>
+          <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
         </div>
       </div>
+    </header>
 
-      <div class="footer-bottom">
-        <span>&copy; 2026 BikeHealth · Fait avec soin pour les cyclistes.</span>
+    <main class="error-page">
+      <div class="container">
+        <div class="error-content">
+          <p class="error-code" aria-hidden="true">404</p>
+          <h1>Tu t'es perdu en route.</h1>
+          <p class="lead">Cette page n'existe pas, ou n'existe plus. Pas de panique, on rentre au point de départ.</p>
+          <div class="error-actions">
+            <a class="btn btn-primary btn-large" href="/">Revenir à l'accueil</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="32" height="32"></picture>
+              <span>BikeHealth</span>
+            </div>
+            <p class="footer-tagline">L'app qui prend soin de ton vélo, en silence.</p>
+          </div>
+
+          <div>
+            <h3>Produit</h3>
+            <ul class="footer-list">
+              <li><a href="/#features">Fonctionnalités</a></li>
+              <li><a href="/release-notes">Notes de version</a></li>
+              <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Télécharger</a></li>
+              <li><a href="mailto:contact@bikehealth.fr">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Légal</h3>
+            <ul class="footer-list">
+              <li><a href="/cgu">Conditions d'utilisation</a></li>
+              <li><a href="/confidentialite">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 BikeHealth · Fait avec soin pour les cyclistes.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ============== Variant EN ============== -->
+  <div data-lang-only="en" hidden>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/en/" class="nav-brand" aria-label="BikeHealth home">
+          <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="36" height="36"></picture>
+          <span>BikeHealth</span>
+        </a>
+        <nav id="primary-nav-en" aria-label="Main navigation">
+          <a class="menu-cta" href="/en/notification">Get notified at launch</a>
+          <ul class="nav-links">
+            <li><a href="/en/#features">Features</a></li>
+            <li><a href="/en/#how">How it works</a></li>
+            <li><a href="/en/#pro">Pro</a></li>
+            <li><a href="/en/release-notes">Release notes</a></li>
+          </ul>
+          <div class="lang-toggle" aria-label="Language">
+            <a href="/" data-lang="fr">FR</a>
+            <span aria-hidden="true">/</span>
+            <a href="/en/" aria-current="true" data-lang="en">EN</a>
+          </div>
+        </nav>
+        <div class="nav-end">
+          <a class="btn btn-primary nav-cta" href="/en/notification">Get notified<span class="nav-cta-suffix"> at launch</span></a>
+          <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-en">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="error-page">
+      <div class="container">
+        <div class="error-content">
+          <p class="error-code" aria-hidden="true">404</p>
+          <h1>Lost on the way.</h1>
+          <p class="lead">This page doesn't exist, or doesn't any more. No panic, let's head home.</p>
+          <div class="error-actions">
+            <a class="btn btn-primary btn-large" href="/en/">Back to home</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <picture><source srcset="/assets/logo-72.webp" type="image/webp"><img src="/assets/logo-72.png" alt="" width="32" height="32"></picture>
+              <span>BikeHealth</span>
+            </div>
+            <p class="footer-tagline">The app that takes care of your bike, silently.</p>
+          </div>
+
+          <div>
+            <h3>Product</h3>
+            <ul class="footer-list">
+              <li><a href="/en/#features">Features</a></li>
+              <li><a href="/en/release-notes">Release notes</a></li>
+              <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Download</a></li>
+              <li><a href="mailto:contact@bikehealth.fr">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Legal</h3>
+            <ul class="footer-list">
+              <li><a href="/en/terms">Terms of use</a></li>
+              <li><a href="/en/privacy">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 BikeHealth · Made with care for cyclists.</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      try {
+        var isEn = /^\/en(\/|$)/.test(location.pathname);
+        var frBlock = document.querySelector('[data-lang-only="fr"]');
+        var enBlock = document.querySelector('[data-lang-only="en"]');
+        if (isEn) {
+          if (frBlock) frBlock.hidden = true;
+          if (enBlock) enBlock.hidden = false;
+        }
+      } catch (e) {}
+    })();
+  </script>
 
 </body>
 </html>
