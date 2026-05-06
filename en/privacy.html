@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- last-synced-with-fr: 2026-05-03 -->
+<!-- last-synced-with-fr: 2026-05-06 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -92,7 +92,7 @@
         </blockquote>
 
         <blockquote>
-          <p><strong>In one sentence:</strong> BikeHealth has no server. Your data stays on your device, unless <em>you</em> choose to connect a third-party service (Strava, Google Places). An anonymous crash report is sent to Firebase to identify bugs, which can be disabled at any time in the App's settings. No user analytics, no ads, no profiling, no resale.</p>
+          <p><strong>In one sentence:</strong> BikeHealth has no server. Your data stays on your device, unless <em>you</em> choose to connect a third-party service (Strava, Google Places). An anonymous crash report is sent to Firebase to identify bugs, which can be disabled at any time in the App's settings. Firebase Analytics measures app usage anonymously (key functional actions, no personal data). No ads, no profiling, no resale.</p>
         </blockquote>
 
         <h2>1. Preamble</h2>
@@ -166,7 +166,12 @@
           <li>The address, phone, or GPS coordinates of your favourite shop.</li>
           <li>Your Strava tokens or third-party service credentials.</li>
         </ul>
-        <p>No other Firebase service is active: <strong>no Firebase Analytics</strong> (no screen tracking, no session or user behaviour tracking), no Performance Monitoring, no Remote Config, no A/B testing. Only Crashlytics is used.</p>
+        <p>Among other Firebase services: Firebase Analytics is also used to measure functional app usage (see section 5bis below). No Performance Monitoring, no Remote Config, no A/B testing.</p>
+        <p><strong>Firebase policy:</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+        <h2>5bis. Anonymous usage measurement (Firebase Analytics)</h2>
+        <p>From version 2.4.8, BikeHealth uses <strong>Firebase Analytics</strong> to measure app usage anonymously. This helps understand which features are used and improve the App accordingly.</p>
+        <p>The data collected is <strong>anonymous and non-identifiable</strong>. No name, email or personal identifier is included. Logged events concern exclusively aggregated functional actions: adding a bike (brand, type, e-bike), connecting Strava, receiving a component or maintenance alert, creating a trip routine, creating a manual reminder. No individual screens, no typed content, no location data.</p>
         <p><strong>Firebase policy:</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
 
         <h2>6. Data collected on the website</h2>
@@ -181,7 +186,7 @@
 
         <h2>7. What BikeHealth doesn't do</h2>
         <ul>
-          <li>No user analytics tool (no Firebase Analytics, no Google Analytics, no Facebook SDK, no Mixpanel, no AppsFlyer). Only Firebase's Crashlytics function is used, and only for crash reports, not to track your behaviour in the App.</li>
+          <li>No commercial or advertising analytics tool (no Google Analytics, no Facebook SDK, no Mixpanel, no AppsFlyer). Firebase Analytics is used solely to measure app functional usage anonymously (see section 5bis) — no nominative behaviour tracking, no targeted advertising.</li>
           <li>No advertising tracker, no advertising.</li>
           <li>No cookies on the website (except the temporary technical cookies necessary for Strava's OAuth flow, managed by the relevant sites).</li>
           <li>No sharing of your data with commercial third parties.</li>
@@ -208,7 +213,7 @@
             </tr>
             <tr>
               <td><code>INTERNET</code></td>
-              <td>Strava connection (OAuth + activity import), Google Places shop search, Google Maps Static mini-map, sending crash reports to Firebase Crashlytics.</td>
+              <td>Strava connection (OAuth + activity import), Google Places shop search, Google Maps Static mini-map, sending crash reports to Firebase Crashlytics, sending Firebase Analytics events.</td>
             </tr>
             <tr>
               <td><code>RECEIVE_BOOT_COMPLETED</code></td>

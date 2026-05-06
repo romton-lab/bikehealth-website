@@ -86,10 +86,10 @@
       <article class="legal-content">
 
         <h1>Politique de confidentialité</h1>
-        <p class="legal-meta">Dernière mise à jour : 3 mai 2026</p>
+        <p class="legal-meta">Dernière mise à jour : 6 mai 2026</p>
 
         <blockquote>
-          <p><strong>En une phrase :</strong> BikeHealth n'a pas de serveur. Tes données restent sur ton téléphone, sauf si <em>toi</em> choisis de connecter un service tiers (Strava, Google Places). Un rapport de crash anonyme est envoyé à Firebase pour identifier les bugs, désactivable à tout moment dans les paramètres. Aucun analytics utilisateur, aucune pub, aucun profilage, aucune revente.</p>
+          <p><strong>En une phrase :</strong> BikeHealth n'a pas de serveur. Tes données restent sur ton téléphone, sauf si <em>toi</em> choisis de connecter un service tiers (Strava, Google Places). Un rapport de crash anonyme est envoyé à Firebase pour identifier les bugs, désactivable à tout moment dans les paramètres. Firebase Analytics mesure anonymement l'usage fonctionnel de l'app (actions clés, sans données personnelles). Aucune pub, aucun profilage, aucune revente.</p>
         </blockquote>
 
         <h2>1. Préambule</h2>
@@ -163,7 +163,12 @@
           <li>L'adresse, le téléphone ou les coordonnées GPS de ton atelier favori.</li>
           <li>Tes tokens Strava ou identifiants de services tiers.</li>
         </ul>
-        <p>Aucun autre service Firebase n'est actif : <strong>pas de Firebase Analytics</strong> (aucun écran visité, aucune session ou comportement utilisateur tracké), pas de Performance Monitoring, pas de Remote Config, pas d'A/B testing. Seule la fonction Crashlytics est utilisée.</p>
+        <p>Parmi les autres services Firebase : Firebase Analytics est également utilisé pour mesurer l'usage fonctionnel de l'app (cf. section 5bis ci-dessous). Pas de Performance Monitoring, pas de Remote Config, pas d'A/B testing.</p>
+        <p><strong>Politique Firebase :</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+        <h2>5bis. Mesure d'usage anonyme (Firebase Analytics)</h2>
+        <p>À partir de la version 2.4.8, BikeHealth utilise <strong>Firebase Analytics</strong> pour mesurer l'usage de l'app de façon anonyme. Cela permet de comprendre quelles fonctionnalités sont utilisées et d'améliorer l'app en conséquence.</p>
+        <p>Les données collectées sont <strong>anonymes et non identifiables</strong>. Aucun nom, prénom, email ou identifiant personnel n'est inclus. Les events loggués concernent exclusivement des actions fonctionnelles agrégées : ajout d'un vélo (marque, type, VAE), connexion Strava, réception d'une alerte composant ou entretien, création d'une habitude de trajet, création d'un rappel manuel. Aucun écran individuel, aucun contenu saisi, aucune donnée de localisation.</p>
         <p><strong>Politique Firebase :</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
 
         <h2>6. Données collectées sur le site web</h2>
@@ -178,7 +183,7 @@
 
         <h2>7. Ce que BikeHealth ne fait pas</h2>
         <ul>
-          <li>Aucun outil d'analytics utilisateur (pas de Firebase Analytics, pas de Google Analytics, pas de SDK Facebook, pas de Mixpanel, pas d'AppsFlyer). Seule la fonction Crashlytics de Firebase est utilisée, uniquement pour les rapports de crash, pas pour tracker ton comportement dans l'app.</li>
+          <li>Aucun outil d'analytics commercial ou publicitaire (pas de Google Analytics, pas de SDK Facebook, pas de Mixpanel, pas d'AppsFlyer). Firebase Analytics est utilisé uniquement pour mesurer anonymement l'usage fonctionnel de l'app (cf. section 5bis) — pas de tracking de comportement nominatif, pas de publicité ciblée.</li>
           <li>Aucun tracker publicitaire, aucune publicité.</li>
           <li>Aucun cookie sur le site web (à l'exception des cookies techniques temporaires nécessaires au flux OAuth Strava, gérés par les sites concernés).</li>
           <li>Aucun partage de tes données avec des tiers commerciaux.</li>
@@ -205,7 +210,7 @@
             </tr>
             <tr>
               <td><code>INTERNET</code></td>
-              <td>Connexion Strava (OAuth + import d'activités), recherche atelier Google Places, mini-carte Google Maps Static, envoi des rapports de crash à Firebase Crashlytics.</td>
+              <td>Connexion Strava (OAuth + import d'activités), recherche atelier Google Places, mini-carte Google Maps Static, envoi des rapports de crash à Firebase Crashlytics, envoi des events Firebase Analytics.</td>
             </tr>
             <tr>
               <td><code>RECEIVE_BOOT_COMPLETED</code></td>
