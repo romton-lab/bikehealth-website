@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- last-synced-with-fr: 2026-05-06 -->
+<!-- last-synced-with-fr: 2026-05-19 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -85,7 +85,7 @@
       <article class="legal-content">
 
         <h1>Privacy policy</h1>
-        <p class="legal-meta">Last updated: 3 May 2026</p>
+        <p class="legal-meta">Last updated: 19 May 2026</p>
 
         <blockquote>
           <p><strong>Translation notice:</strong> this English version is provided for convenience. The <a href="/confidentialite">French version</a> at bikehealth.fr/confidentialite is the legally authoritative text. In case of discrepancy between the two, the French version prevails.</p>
@@ -171,7 +171,12 @@
 
         <h2>5bis. Anonymous usage measurement (Firebase Analytics)</h2>
         <p>From version 2.4.8, BikeHealth uses <strong>Firebase Analytics</strong> to measure app usage anonymously. This helps understand which features are used and improve the App accordingly.</p>
-        <p>The data collected is <strong>anonymous and non-identifiable</strong>. No name, email or personal identifier is included. Logged events concern exclusively aggregated functional actions: adding a bike (brand, type, e-bike), connecting Strava, receiving a component or maintenance alert, creating a trip routine, creating a manual reminder. No individual screens, no typed content, no location data.</p>
+        <p>The data collected is <strong>anonymous and non-identifiable</strong>. No name, email or personal identifier is included. Logged events concern exclusively aggregated functional actions:</p>
+        <ul>
+          <li><strong>Setup:</strong> end of onboarding (Simple/Advanced mode chosen), adding a bike (brand, type, e-bike), connecting Strava, creating a trip routine, creating a manual reminder, archiving a bike, enabling or disabling holiday mode.</li>
+          <li><strong>Regular usage:</strong> adding a trip (manual / recurring / Strava), logging a maintenance entry, replacing a component, receiving an alert, handling an alert (done or postponed), weekly trip validation, opening a tips article.</li>
+        </ul>
+        <p>No individual screens, no typed content (titles, notes, photos), no location data, no custom bike name. Firebase Analytics is independent from Crashlytics: you can disable Crashlytics, Firebase Analytics does not collect any identifying data by default.</p>
         <p><strong>Firebase policy:</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
 
         <h2>6. Data collected on the website</h2>
