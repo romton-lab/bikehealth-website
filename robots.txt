@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /index.html
+Disallow: /en/index.html
 
 # AI training crawlers : opt-out
 

@@ -10,8 +10,6 @@
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/confidentialite">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/privacy">
 
-  <!-- Auto-redirect to EN if browser language is not French (skipped if user has explicit FR preference). Maps /confidentialite to /en/privacy. -->
-  <script>(function(){try{var p=location.pathname;if(p.indexOf('/en/')===0||p==='/en')return;var s=localStorage.getItem('bh-lang');if(s==='fr')return;var l=(navigator.language||'').toLowerCase();if(!(s==='en'||(!s&&!l.startsWith('fr'))))return;var m={'/cgu':'/terms','/confidentialite':'/privacy'};var t=m[p]||p;location.replace('/en'+(t==='/'?'/':t))}catch(e){}})();</script>
 
   <link rel="icon" type="image/png" href="assets/favicon-48.png">
   <link rel="apple-touch-icon" href="assets/logo-192.png">
