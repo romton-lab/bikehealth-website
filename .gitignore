@@ -145,3 +145,7 @@ vite.config.ts.timestamp-*
 # Wrangler / Cloudflare local cache
 .wrangler/
 .dev.vars
+
+# Local dev tooling (puppeteer/sharp for screenshot + OG image generation)
+package.json
+package-lock.json
