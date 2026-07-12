@@ -11,11 +11,7 @@
   <link rel="icon" type="image/png" href="/assets/favicon-48.png">
   <link rel="apple-touch-icon" href="/assets/logo-192.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"></noscript>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
 
   <link rel="preload" as="style" href="/styles.css">
   <link rel="stylesheet" href="/styles.css">
@@ -58,6 +54,7 @@
 
   <!-- ============== Variant FR ============== -->
   <div data-lang-only="fr">
+    <a class="skip-link" href="#main">Aller au contenu</a>
     <header class="nav">
       <div class="container nav-inner">
         <a href="/" class="nav-brand" aria-label="Accueil BikeHealth">
@@ -91,7 +88,7 @@
       </div>
     </header>
 
-    <main class="error-page">
+    <main id="main" class="error-page">
       <div class="container">
         <div class="error-content">
           <p class="error-code" aria-hidden="true">404</p>
@@ -120,7 +117,7 @@
             <ul class="footer-list">
               <li><a href="/#features">Fonctionnalités</a></li>
               <li><a href="/release-notes">Notes de version</a></li>
-              <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Télécharger</a></li>
+              <li><a href="/notification">Notification de lancement</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -143,6 +140,7 @@
 
   <!-- ============== Variant EN ============== -->
   <div data-lang-only="en" hidden>
+    <a class="skip-link" href="#main-en">Skip to content</a>
     <header class="nav">
       <div class="container nav-inner">
         <a href="/en/" class="nav-brand" aria-label="BikeHealth home">
@@ -176,7 +174,7 @@
       </div>
     </header>
 
-    <main class="error-page">
+    <main id="main-en" class="error-page">
       <div class="container">
         <div class="error-content">
           <p class="error-code" aria-hidden="true">404</p>
@@ -205,7 +203,7 @@
             <ul class="footer-list">
               <li><a href="/en/#features">Features</a></li>
               <li><a href="/en/release-notes">Release notes</a></li>
-              <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Download</a></li>
+              <li><a href="/en/notification">Launch notification</a></li>
               <li><a href="/en/contact">Contact</a></li>
             </ul>
           </div>

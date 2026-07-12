@@ -1,0 +1,16 @@
+# Cloudflare Workers Static Assets headers file
+# Reference: https://developers.cloudflare.com/workers/static-assets/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Les polices et images sont versionnées de fait (elles changent rarement) :
+# cache long pour éviter de les re-télécharger à chaque visite.
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=86400

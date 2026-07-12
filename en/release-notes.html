@@ -15,11 +15,7 @@
   <link rel="icon" type="image/png" href="/assets/favicon-48.png">
   <link rel="apple-touch-icon" href="/assets/logo-192.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"></noscript>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
 
   <link rel="preload" as="style" href="/styles.css">
   <link rel="stylesheet" href="/styles.css">
@@ -47,6 +43,8 @@
   <script defer src="/script.js"></script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="nav">
     <div class="container nav-inner">
@@ -81,7 +79,7 @@
     </div>
   </header>
 
-  <main class="error-page">
+  <main id="main" class="error-page">
     <div class="container">
       <div class="error-content">
         <h1>Coming soon</h1>

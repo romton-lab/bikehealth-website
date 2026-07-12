@@ -10,15 +10,12 @@
   <link rel="canonical" href="https://bikehealth.fr/en/privacy">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/confidentialite">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/privacy">
+  <link rel="alternate" hreflang="x-default" href="https://bikehealth.fr/confidentialite">
 
   <link rel="icon" type="image/png" href="/assets/favicon-48.png">
   <link rel="apple-touch-icon" href="/assets/logo-192.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"></noscript>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
 
   <link rel="preload" as="style" href="/styles.css">
   <link rel="stylesheet" href="/styles.css">
@@ -46,6 +43,8 @@
   <script defer src="/script.js"></script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="nav">
     <div class="container nav-inner">
@@ -80,12 +79,12 @@
     </div>
   </header>
 
-  <main class="legal">
+  <main id="main" class="legal">
     <div class="container">
       <article class="legal-content">
 
         <h1>Privacy policy</h1>
-        <p class="legal-meta">Last updated: 19 May 2026</p>
+        <p class="legal-meta">Last updated: 6 July 2026</p>
 
         <blockquote>
           <p><strong>Translation notice:</strong> this English version is provided for convenience. The <a href="/confidentialite">French version</a> at bikehealth.fr/confidentialite is the legally authoritative text. In case of discrepancy between the two, the French version prevails.</p>
@@ -170,7 +169,7 @@
         <p><strong>Firebase policy:</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
 
         <h2>5bis. Anonymous usage measurement (Firebase Analytics)</h2>
-        <p>From version 2.4.8, BikeHealth uses <strong>Firebase Analytics</strong> to measure app usage anonymously. This helps understand which features are used and improve the App accordingly.</p>
+        <p>BikeHealth uses <strong>Firebase Analytics</strong> to measure app usage anonymously. This helps understand which features are used and improve the App accordingly.</p>
         <p>The data collected is <strong>anonymous and non-identifiable</strong>. No name, email or personal identifier is included. Logged events concern exclusively aggregated functional actions:</p>
         <ul>
           <li><strong>Setup:</strong> end of onboarding (Simple/Advanced mode chosen), adding a bike (brand, type, e-bike), connecting Strava, creating a trip routine, creating a manual reminder, archiving a bike, enabling or disabling holiday mode.</li>
@@ -246,7 +245,7 @@
 
         <h2>10. Hosting</h2>
         <p>The website <a href="https://bikehealth.fr">bikehealth.fr</a> is hosted by <strong>Cloudflare, Inc.</strong> (101 Townsend St, San Francisco, CA 94107, USA) on the Cloudflare Workers infrastructure.</p>
-        <p>The Android App is distributed via <strong>GitHub, Inc.</strong> (88 Colin P Kelly Jr St, San Francisco, CA 94107, USA) on the GitHub Releases platform.</p>
+        <p>The Android App will be distributed via <strong>Google Play</strong>, a service of Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).</p>
         <p>Crash reports are processed by <strong>Google LLC / Firebase</strong> (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). See Firebase's policy for details on subprocessors and transfers.</p>
 
         <h2>11. Modifications</h2>
@@ -275,7 +274,7 @@
           <ul class="footer-list">
             <li><a href="/en/#features">Features</a></li>
             <li><a href="/en/release-notes">Release notes</a></li>
-            <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Download</a></li>
+            <li><a href="/en/notification">Launch notification</a></li>
             <li><a href="/en/contact">Contact</a></li>
           </ul>
         </div>

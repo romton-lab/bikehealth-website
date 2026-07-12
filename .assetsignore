@@ -21,3 +21,6 @@ Thumbs.db
 # OG image regen template (kept in repo, not deployed)
 og-template.html
 .tmp_*
+
+# Worker script (deployed as the Worker, not as a static asset)
+worker.js

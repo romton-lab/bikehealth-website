@@ -19,7 +19,10 @@
   });
 
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && nav.classList.contains('is-open')) setOpen(false);
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+      setOpen(false);
+      toggle.focus();
+    }
   });
 
   // Language toggle: persist user choice so future visits respect it

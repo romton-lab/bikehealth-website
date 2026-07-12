@@ -9,16 +9,13 @@
   <link rel="canonical" href="https://bikehealth.fr/cgu">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/cgu">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/terms">
+  <link rel="alternate" hreflang="x-default" href="https://bikehealth.fr/cgu">
 
 
   <link rel="icon" type="image/png" href="assets/favicon-48.png">
   <link rel="apple-touch-icon" href="assets/logo-192.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"></noscript>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
 
   <link rel="preload" as="style" href="styles.css">
   <link rel="stylesheet" href="styles.css">
@@ -45,6 +42,8 @@
   <script defer src="/script.js"></script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Aller au contenu</a>
 
   <header class="nav">
     <div class="container nav-inner">
@@ -79,19 +78,19 @@
     </div>
   </header>
 
-  <main class="legal">
+  <main id="main" class="legal">
     <div class="container">
       <article class="legal-content">
 
         <h1>Conditions générales d'utilisation</h1>
-        <p class="legal-meta">Dernière mise à jour : 19 mai 2026</p>
+        <p class="legal-meta">Dernière mise à jour : 6 juillet 2026</p>
 
         <blockquote>
           <p><strong>En une phrase :</strong> BikeHealth est une app sans pub, fournie en l'état par un développeur indépendant. Elle t'aide à suivre l'usure de ton vélo mais ne remplace ni un mécanicien ni ton bon sens.</p>
         </blockquote>
 
         <h2>1. Ce qu'est BikeHealth</h2>
-        <p>BikeHealth est une application Android de suivi d'entretien de vélos, développée et maintenue à titre personnel et non-commercial. Elle fonctionne <strong>sans compte utilisateur et sans serveur central</strong> — tout est stocké localement sur ton appareil. Elle est distribuée gratuitement en APK via <a href="https://github.com/romton-lab/BikeHealth/releases" rel="noopener">GitHub Releases</a>.</p>
+        <p>BikeHealth est une application Android de suivi d'entretien de vélos, développée et maintenue à titre personnel et non-commercial. Elle fonctionne <strong>sans compte utilisateur et sans serveur central</strong> — tout est stocké localement sur ton appareil. Elle sera distribuée gratuitement sur Google Play.</p>
         <p>Pour ce qui est collecté (rapports de crash, usage anonyme), voir la <a href="/confidentialite">Politique de confidentialité</a>.</p>
 
         <h2>2. Fournie en l'état</h2>
@@ -126,7 +125,7 @@
           <ul class="footer-list">
             <li><a href="/#features">Fonctionnalités</a></li>
             <li><a href="/release-notes">Notes de version</a></li>
-            <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Télécharger</a></li>
+            <li><a href="/notification">Notification de lancement</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>

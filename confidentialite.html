@@ -9,16 +9,13 @@
   <link rel="canonical" href="https://bikehealth.fr/confidentialite">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/confidentialite">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/privacy">
+  <link rel="alternate" hreflang="x-default" href="https://bikehealth.fr/confidentialite">
 
 
   <link rel="icon" type="image/png" href="assets/favicon-48.png">
   <link rel="apple-touch-icon" href="assets/logo-192.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"></noscript>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
 
   <link rel="preload" as="style" href="styles.css">
   <link rel="stylesheet" href="styles.css">
@@ -45,6 +42,8 @@
   <script defer src="/script.js"></script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Aller au contenu</a>
 
   <header class="nav">
     <div class="container nav-inner">
@@ -79,12 +78,12 @@
     </div>
   </header>
 
-  <main class="legal">
+  <main id="main" class="legal">
     <div class="container">
       <article class="legal-content">
 
         <h1>Politique de confidentialité</h1>
-        <p class="legal-meta">Dernière mise à jour : 19 mai 2026</p>
+        <p class="legal-meta">Dernière mise à jour : 6 juillet 2026</p>
 
         <blockquote>
           <p><strong>En une phrase :</strong> BikeHealth n'a pas de serveur. Tes données restent sur ton téléphone, sauf si <em>toi</em> choisis de connecter un service tiers (Strava, Google Places). Un rapport de crash anonyme est envoyé à Firebase pour identifier les bugs, désactivable à tout moment dans les paramètres. Firebase Analytics mesure anonymement l'usage fonctionnel de l'app (actions clés, sans données personnelles). Aucune pub, aucun profilage, aucune revente.</p>
@@ -165,7 +164,7 @@
         <p><strong>Politique Firebase :</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
 
         <h2>5bis. Mesure d'usage anonyme (Firebase Analytics)</h2>
-        <p>Depuis la version 2.4.8, BikeHealth utilise <strong>Firebase Analytics</strong> pour mesurer l'usage de l'app de façon anonyme. Cela permet de comprendre quelles fonctionnalités sont utilisées et d'améliorer l'app en conséquence.</p>
+        <p>BikeHealth utilise <strong>Firebase Analytics</strong> pour mesurer l'usage de l'app de façon anonyme. Cela permet de comprendre quelles fonctionnalités sont utilisées et d'améliorer l'app en conséquence.</p>
         <p>Les données collectées sont <strong>anonymes et non identifiables</strong>. Aucun nom, prénom, email ou identifiant personnel n'est inclus. Les events loggués concernent exclusivement des actions fonctionnelles agrégées :</p>
         <ul>
           <li><strong>Configuration :</strong> fin d'onboarding (mode Simple/Avancé choisi), ajout d'un vélo (marque, type, VAE), connexion Strava, création d'une habitude de trajet, création d'un rappel manuel, archivage d'un vélo, activation ou désactivation du mode vacances.</li>
@@ -241,7 +240,7 @@
 
         <h2>10. Hébergement</h2>
         <p>Le site <a href="https://bikehealth.fr">bikehealth.fr</a> est hébergé par <strong>Cloudflare, Inc.</strong> (101 Townsend St, San Francisco, CA 94107, États-Unis) sur l'infrastructure Cloudflare Workers.</p>
-        <p>L'app Android est distribuée via <strong>GitHub, Inc.</strong> (88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis) sur la plateforme GitHub Releases.</p>
+        <p>L'app Android sera distribuée via <strong>Google Play</strong>, un service de Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, États-Unis).</p>
         <p>Les rapports de crash sont traités par <strong>Google LLC / Firebase</strong> (1600 Amphitheatre Parkway, Mountain View, CA 94043, États-Unis). Voir la politique Firebase pour le détail des sous-traitants et des transferts.</p>
 
         <h2>11. Modifications</h2>
@@ -270,7 +269,7 @@
           <ul class="footer-list">
             <li><a href="/#features">Fonctionnalités</a></li>
             <li><a href="/release-notes">Notes de version</a></li>
-            <li><a href="https://github.com/romton-lab/BikeHealth/releases/latest" rel="noopener">Télécharger</a></li>
+            <li><a href="/notification">Notification de lancement</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
