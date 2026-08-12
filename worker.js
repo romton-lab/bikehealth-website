@@ -4,7 +4,6 @@
 // faux succès si Apps Script refuse), et URLs Apps Script non exposées.
 
 const APPS_SCRIPT_URLS = {
-  '/api/notify': 'https://script.google.com/macros/s/AKfycbxB8MsWmqbWdTaPY6WHANBXZpNaftfmfEkyEo8-A4veReqPCL7hQM7729kIyeUj-v3k/exec',
   '/api/notify-pro': 'https://script.google.com/macros/s/AKfycbwhZbzhpPste_2Kyh-ljpMxF4OzFQ1bBVfosey0PQW7QPMUCsHJ711u9JXRkFbY7Stk/exec',
 };
 
