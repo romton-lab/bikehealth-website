@@ -12,8 +12,12 @@
 /confidentialite.html     /confidentialite        301
 /contact.html             /contact                301
 /release-notes.html       /release-notes          301
-/notification.html        /notification           301
 /notification-pro.html    /notification-pro       301
+
+# L'ancienne page « Être notifié au lancement » est remplacée par /contact.
+# Les liens déjà partagés continuent de fonctionner.
+/notification             /contact                301
+/notification.html        /contact                301
 
 # .html aliases (EN)
 /en/index.html            /en/                    301

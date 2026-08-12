@@ -6,7 +6,6 @@
   <title>Notes de version · BikeHealth</title>
   <meta name="description" content="L'historique des versions de BikeHealth : nouvelles fonctionnalités, améliorations et corrections.">
   <meta name="theme-color" content="#F4EFE6">
-  <meta name="robots" content="noindex">
   <link rel="canonical" href="https://bikehealth.fr/release-notes">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/release-notes">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/release-notes">
@@ -54,7 +53,7 @@
         <span>BikeHealth</span>
       </a>
       <nav id="primary-nav" aria-label="Navigation principale">
-        <a class="menu-cta" href="/notification">Être notifié au lancement</a>
+        <a class="menu-cta" href="/contact">Nous contacter</a>
         <ul class="nav-links">
           <li><a href="/#features">Fonctionnalités</a></li>
           <li><a href="/#comment">Comment ça marche</a></li>
@@ -68,7 +67,7 @@
         </div>
       </nav>
       <div class="nav-end">
-        <a class="btn btn-primary nav-cta" href="/notification">Être notifié<span class="nav-cta-suffix"> au lancement</span></a>
+        <a class="btn btn-primary nav-cta" href="/contact">Nous contacter</a>
         <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="6" x2="21" y2="6"/>
@@ -80,90 +79,94 @@
     </div>
   </header>
 
-  <main id="main" class="error-page">
-    <div class="container">
-      <div class="error-content">
-        <h1>Bientôt disponible</h1>
-        <p class="lead">Les notes de version seront publiées ici dès la première sortie publique de BikeHealth. En attendant, inscris-toi pour être prévenu au lancement.</p>
-        <div class="error-actions">
-          <a class="btn btn-primary btn-large" href="/notification">Être notifié au lancement</a>
-          <a class="btn btn-secondary btn-large" href="/">Retour à l'accueil</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!--
-    ============================================================
-    NOTES DE VERSION (à réactiver à la sortie publique)
-    ============================================================
-    Pour publier les notes de version :
-    1. Remplacer le <main class="error-page"> ci-dessus par le
-       <main class="legal"> ci-dessous (décommenter le bloc).
-    2. Vérifier la date de la release.
-    3. Retirer la balise <meta name="robots" content="noindex">
-       en tête de page pour que la page soit indexée.
-
-  <main class="legal">
+  <main id="main" class="legal">
     <div class="container">
       <article class="legal-content">
 
         <h1>Notes de version</h1>
         <p class="legal-meta">L'historique des évolutions de BikeHealth, version après version.</p>
 
+        <!-- Les versions suivantes viennent s'ajouter AU-DESSUS de ce bloc,
+             au format habituel (Nouveautés / Améliorations / Corrections).
+             Penser à déplacer le tag "Dernière version" sur la nouvelle. -->
+
         <section class="release">
           <div class="release-header">
-            <h2 class="release-version">v2.3</h2>
-            <span class="release-date">Avril 2026</span>
+            <h2 class="release-version">v2.5</h2>
+            <span class="release-date">Août 2026</span>
             <span class="release-tag latest">Dernière version</span>
           </div>
 
-          <p>Atelier favori, mode vacances, recherche par marque et modèle, statistiques de trajets, gestion des vélos qui ont déjà roulé, et un paquet d'améliorations sur le suivi au quotidien.</p>
+          <p>Première version publique. Voici tout ce que fait BikeHealth aujourd'hui. Les prochaines versions viendront s'ajouter au-dessus de cette base.</p>
 
-          <h3>Nouveautés</h3>
+          <h3>Tes vélos</h3>
           <ul>
-            <li><strong>Atelier favori.</strong> Renseigne ton atelier vélo favori depuis ton profil. Recherche par nom ou adresse via Google : la fiche est préremplie automatiquement (nom, adresse, téléphone, horaires). Un bouton <em>Contacter mon atelier</em> est disponible sur chaque fiche vélo, avec un lien <em>M'y rendre</em> qui ouvre ton appli de navigation. Saisie manuelle possible si ton atelier n'est pas dans Google.</li>
-            <li><strong>Mode vacances.</strong> Active le mode vacances depuis tes Habitudes en indiquant tes dates de départ et de retour. BikeHealth suspend la génération automatique de trajets pendant cette période, puis reprend tout seul à ton retour. Un bandeau discret sur la liste de tes vélos te rappelle que le mode est actif.</li>
-            <li><strong>Notifications groupées et enrichies.</strong> Les alertes composants et les rappels d'entretien sont regroupés par vélo (fini le spam quand plusieurs pièces approchent leur seuil en même temps). Pour les entretiens récurrents, choix explicite entre <em>Reporter de 3 jours</em> ou <em>Reporter de 50 km</em>. Nouvelle notification de <strong>révision annuelle</strong> au bout d'un an depuis la dernière révision.</li>
-            <li><strong>Ajout de vélo : recherche par marque et modèle.</strong> Fini le double menu déroulant. Tape directement la marque, les suggestions apparaissent en temps réel, le modèle préremplit les caractéristiques. Saisie libre toujours possible. Lien discret pour utiliser un vélo générique en un clic si tu ne connais pas le tien.</li>
-            <li><strong>Statistiques de trajets.</strong> Nouveau sous-écran <em>Statistiques</em> dans ton profil : répartition de tes trajets par type (Boulot, Sport, Balade, Courses…) en donut chart. Pourcentages, nombre de trajets, kilomètres par catégorie. Filtrable par vélo.</li>
-            <li><strong>Gestion des vélos qui ont déjà roulé.</strong> À l'ajout d'un vélo avec des kilomètres initiaux, BikeHealth te propose d'indiquer les composants neufs ou récemment révisés. Plus de fausses alertes « à remplacer » dès le premier jour pour les pièces déjà changées.</li>
+            <li><strong>Catalogue de près de 400 modèles</strong> répartis sur 39 marques, VAE compris : les composants sont créés avec leur marque et leur modèle. Saisie manuelle possible, avec des seuils standard à affiner ensuite.</li>
+            <li><strong>Photo personnalisée</strong> depuis ta galerie.</li>
+            <li><strong>Écran Détails du vélo</strong> : nom, couleur de badge, type, date d'entrée au parc, kilométrage initial, millésime, freins, transmission, cadre, fourche, VAE, dérailleurs, notes libres.</li>
+            <li><strong>Vélo déjà roulé</strong> : tu déclares à l'ajout les pièces neuves ou récemment changées, pour éviter les fausses alertes dès le premier jour.</li>
+            <li><strong>Plusieurs vélos</strong>, chacun avec son suivi, ses alertes et son historique. Archivage d'un vélo qui ne roule plus.</li>
           </ul>
 
-          <h3>Améliorations</h3>
+          <h3>Composants et usure</h3>
           <ul>
-            <li><strong>Historique des trajets par mois.</strong> Tes trajets validés sont regroupés par mois avec un récap (nombre de trajets, km). Mois passés repliés par défaut.</li>
-            <li><strong>Historique des entretiens par mois.</strong> Même logique : regroupement mensuel, filtre par type (entretiens récurrents / remplacements / autre), barre colorée pour distinguer entretien et remplacements.</li>
-            <li><strong>Type de trajet à l'ajout.</strong> Choisis le type (Boulot, Sport, Balade…) dès la saisie. Modifiable a posteriori depuis le détail.</li>
-            <li><strong>Case « Révision complète » dans le formulaire d'entretien.</strong> Coche-la pour mettre à jour automatiquement la date de dernière révision de ton vélo.</li>
-            <li><strong>Notes sur tes entretiens.</strong> Les notes saisies à l'entretien apparaissent maintenant dans la liste et le détail.</li>
-            <li><strong>Marque et modèle des composants.</strong> En mode Avancé, modifie directement marque et modèle d'un composant depuis la fiche vélo (icône ⚙️).</li>
-            <li><strong>Notes libres sur la fiche vélo.</strong> Ajoute des notes personnelles (pression des pneus, observations, infos atelier…) depuis la bulle d'info ⓘ.</li>
-            <li><strong>Renommage du vélo.</strong> Modifie le nom de ton vélo depuis la bulle ⓘ, en mode Simple comme Avancé. BikeHealth vérifie l'unicité dans ton parc.</li>
-            <li><strong>Attributs structurels modifiables.</strong> En mode Avancé, modifie type de freins, VAE, matériaux, dérailleurs depuis la bulle ⓘ. Un changement de type de freins ou de VAE met à jour automatiquement les composants associés.</li>
-            <li><strong>Photo personnalisée.</strong> Choisis une photo depuis ta galerie pour personnaliser chaque vélo. Retour à la photo d'origine possible à tout moment.</li>
-            <li><strong>Nouveau dashboard profil.</strong> Réorganisation en 4 sous-écrans navigables : Habitudes, Connexions, Atelier, Statistiques. Chaque section affiche un résumé dynamique de son état.</li>
-            <li><strong>Pastille d'alerte.</strong> Indicateur rouge ou orange permanent sur l'onglet Alertes : tu sais d'un coup d'œil s'il y a des composants à surveiller ou des entretiens à faire.</li>
+            <li><strong>Suivi avec alerte</strong> : chaîne ou courroie, cassette, pneus avant et arrière, plaquettes de frein à disque ou patins, dérailleurs avant et arrière, plateau, roues et rayons, et pour les VAE la batterie et le moteur.</li>
+            <li><strong>Jauge et statut</strong> vert, orange ou rouge pour chaque pièce.</li>
+            <li><strong>Seuils consultables</strong> : issus de recommandations constructeurs et de pratiques d'atelier, ils tiennent compte du VAE et sont affichés en clair dans la section « Nos seuils » du profil.</li>
+            <li><strong>Marque et modèle</strong> modifiables par composant.</li>
+            <li><strong>Historique de remplacement par pièce</strong> : tu vois combien de kilomètres a tenu chaque chaîne successive.</li>
           </ul>
 
-          <h3>Corrections</h3>
+          <h3>Trajets et kilométrage</h3>
           <ul>
-            <li><strong>Fausses alertes sur vélos archivés.</strong> Les composants d'un vélo archivé ne déclenchent plus ni pastille ni notification.</li>
-            <li><strong>Dates de saisie uniformisées.</strong> Tous les champs date utilisent désormais le sélecteur de calendrier natif Android.</li>
-            <li><strong>Marque et modèle conservés au remplacement.</strong> Lors d'un remplacement de composant, les valeurs existantes sont pré-remplies dans le formulaire.</li>
-            <li><strong>Statistiques sans km initiaux.</strong> Les km parcourus avant l'ajout du vélo à BikeHealth ne sont plus comptabilisés dans les statistiques (ils restent utilisés pour le calcul d'usure des composants).</li>
-            <li>Corrections de bugs mineurs et améliorations de stabilité.</li>
+            <li><strong>Trajets réguliers</strong> déclarés une fois (Boulot, Sport, Balade, Courses) et comptés automatiquement, sans capteur.</li>
+            <li><strong>Confirmation hebdomadaire</strong> en un tap, le jour et à l'heure de ton choix.</li>
+            <li><strong>Saisie manuelle</strong> d'un trajet ponctuel, type modifiable après coup.</li>
+            <li><strong>Mode vacances</strong> : la génération se suspend pendant tes dates d'absence et reprend toute seule à ton retour.</li>
+            <li><strong>Historique des trajets</strong> groupé par mois.</li>
+          </ul>
+
+          <h3>Entretiens et alertes</h3>
+          <ul>
+            <li><strong>Quatre rappels récurrents par vélo</strong> : lubrification de la chaîne (150 km), pression des pneus (200 km ou 14 jours), vérification des freins (300 km ou 30 jours), révision annuelle (365 jours).</li>
+            <li><strong>Rappels personnalisés</strong> créés depuis la fiche d'un vélo, pour ce que l'app ne suit pas seule : assurance, antivol à remplacer.</li>
+            <li><strong>Report d'un rappel</strong> de 3 jours ou de 50 km, directement depuis la notification.</li>
+            <li><strong>Onglet Alertes</strong> avec pastille permanente : tu sais d'un coup d'œil s'il y a quelque chose à faire.</li>
+            <li><strong>Saisie d'un entretien en deux taps</strong> depuis l'alerte, avec notes, coût et case « révision complète ».</li>
+            <li><strong>Historique des entretiens</strong> groupé par mois, filtrable par type.</li>
+            <li><strong>Notifications groupées par vélo</strong>, en immédiat ou à un créneau fixe que tu choisis, silencieuses de 22h à 8h en mode immédiat.</li>
+          </ul>
+
+          <h3>Conseils</h3>
+          <ul>
+            <li><strong>15 fiches</strong> consultables dans l'app, en trois espaces.</li>
+            <li><strong>J'ai un souci</strong> : j'ai crevé, je freine mal, la chaîne a sauté ou cassé, les vitesses passent mal, ça frotte ou ça fait un bruit, autre chose. Règle de sécurité d'abord, réparation ensuite.</li>
+            <li><strong>Prendre soin</strong> : le contrôle éclair avant de partir, le rituel hebdo, bien lubrifier sa chaîne, le point mensuel, ton kit de sacoche, entretenir ton équipement de sécurité.</li>
+            <li><strong>Remplacer</strong> : la chaîne, la cassette, un pneu ou une chambre.</li>
+            <li><strong>Sortie atelier</strong> depuis chaque fiche : joindre ton atelier favori, ou en trouver un ouvert à proximité.</li>
+          </ul>
+
+          <h3>Statistiques</h3>
+          <ul>
+            <li><strong>Rythme de pratique.</strong></li>
+            <li><strong>Coût d'entretien</strong>, calculé sur les montants saisis.</li>
+            <li><strong>Impact environnemental</strong> : CO₂ évité par rapport à une voiture thermique moyenne, sur la base ADEME.</li>
+            <li><strong>Répartition par type de trajet</strong>, filtrable par vélo.</li>
+          </ul>
+
+          <h3>Profil et réglages</h3>
+          <ul>
+            <li><strong>Parcours de démarrage guidé</strong> à la première ouverture, rejouable depuis les Paramètres.</li>
+            <li><strong>Atelier favori</strong> : recherche par nom ou adresse, fiche préremplie (nom, adresse, téléphone, horaires), saisie manuelle possible, boutons pour le contacter et pour s'y rendre.</li>
+            <li><strong>Réglages de notifications</strong> détaillés par famille de rappel.</li>
+            <li><strong>Envoi d'un retour</strong> depuis l'app.</li>
+            <li><strong>Données</strong> : partage de statistiques anonymes désactivable, et suppression de toutes tes données en un bouton.</li>
           </ul>
         </section>
 
       </article>
     </div>
   </main>
-
-    ============================================================
-    Fin du bloc à réactiver
-    ============================================================
-  -->
 
   <footer class="footer">
     <div class="container">
@@ -180,8 +183,7 @@
           <h3>Produit</h3>
           <ul class="footer-list">
             <li><a href="/#features">Fonctionnalités</a></li>
-            <li><a href="/release-notes">Notes de version</a></li>
-            <li><a href="/notification">Notification de lancement</a></li>
+            <li><a href="/release-notes" aria-current="page">Notes de version</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>

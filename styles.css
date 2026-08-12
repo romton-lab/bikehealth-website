@@ -308,9 +308,7 @@ section {
   gap: var(--space-2);
 }
 
-/* CTA principale dans la nav : caché sur mobile, visible sur desktop.
-   On force inline-block (pas inline-flex hérité de .btn) pour que le span
-   ".nav-cta-suffix" et son espace de tête s'affichent en flux texte normal. */
+/* CTA principale dans la nav : caché sur mobile, visible sur desktop. */
 .nav-cta {
   display: none;
 }
@@ -538,6 +536,25 @@ section {
 .hero-meta {
   font-size: 0.875rem;
   color: var(--color-text-muted);
+}
+
+/* Badge Play Store : artwork officiel Google déposé dans assets/, activé
+   le jour de la sortie dans le hero et dans le CTA final. */
+.playstore-badge {
+  display: inline-block;
+  line-height: 0;
+}
+.playstore-badge img {
+  height: 54px;
+  width: auto;
+}
+
+/* Note discrète centrée, sous une grille de cartes ou un CTA */
+.section-note {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-4);
 }
 
 .hero-mockup {

@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /index.html
-Disallow: /en/index.html
+
+# /index.html et /en/index.html ne sont plus bloqués ici : ils font un 301
+# vers / et /en/ (voir _redirects). Google doit pouvoir les crawler pour
+# voir la redirection et consolider la canonique.
 
 # AI training crawlers : opt-out
 
