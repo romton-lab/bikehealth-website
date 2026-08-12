@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- last-synced-with-fr: 2026-05-03 -->
+<!-- last-synced-with-fr: 2026-08-12 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,6 @@
   <title>Release notes · BikeHealth</title>
   <meta name="description" content="Release history for BikeHealth: new features, improvements, and fixes.">
   <meta name="theme-color" content="#F4EFE6">
-  <meta name="robots" content="noindex">
   <link rel="canonical" href="https://bikehealth.fr/en/release-notes">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/release-notes">
   <link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/release-notes">
@@ -53,12 +52,12 @@
         <span>BikeHealth</span>
       </a>
       <nav id="primary-nav" aria-label="Main navigation">
-        <a class="menu-cta" href="/en/notification">Get notified at launch</a>
+        <a class="menu-cta" href="/en/contact">Contact us</a>
         <ul class="nav-links">
           <li><a href="/en/#features">Features</a></li>
           <li><a href="/en/#how">How it works</a></li>
           <li><a href="/en/#pro">Pro</a></li>
-          <li><a href="/en/release-notes" aria-current="page">Release notes</a></li>
+          <li><a href="/en/release-notes">Release notes</a></li>
         </ul>
         <div class="lang-toggle" aria-label="Language">
           <a href="/release-notes" data-lang="fr">FR</a>
@@ -67,7 +66,7 @@
         </div>
       </nav>
       <div class="nav-end">
-        <a class="btn btn-primary nav-cta" href="/en/notification">Get notified<span class="nav-cta-suffix"> at launch</span></a>
+        <a class="btn btn-primary nav-cta" href="/en/contact">Contact us</a>
         <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="6" x2="21" y2="6"/>
@@ -79,90 +78,94 @@
     </div>
   </header>
 
-  <main id="main" class="error-page">
-    <div class="container">
-      <div class="error-content">
-        <h1>Coming soon</h1>
-        <p class="lead">Release notes will be published here once BikeHealth's first public version ships. In the meantime, sign up to be notified at launch.</p>
-        <div class="error-actions">
-          <a class="btn btn-primary btn-large" href="/en/notification">Get notified at launch</a>
-          <a class="btn btn-secondary btn-large" href="/en/">Back to home</a>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!--
-    ============================================================
-    RELEASE NOTES (re-enable at public launch)
-    ============================================================
-    To publish release notes:
-    1. Replace the <main class="error-page"> above with the
-       <main class="legal"> block below (uncomment it).
-    2. Update the release date.
-    3. Remove <meta name="robots" content="noindex"> from <head>
-       so the page is indexable.
-
-  <main class="legal">
+  <main id="main" class="legal">
     <div class="container">
       <article class="legal-content">
 
         <h1>Release notes</h1>
-        <p class="legal-meta">BikeHealth's evolution, version after version.</p>
+        <p class="legal-meta">How BikeHealth has evolved, version after version.</p>
+
+        <!-- Later versions go ABOVE this block, in the usual format
+             (New / Improvements / Fixes). Remember to move the
+             "Current version" tag onto the new one. -->
 
         <section class="release">
           <div class="release-header">
-            <h2 class="release-version">v2.3</h2>
-            <span class="release-date">April 2026</span>
-            <span class="release-tag latest">Latest version</span>
+            <h2 class="release-version">2.5</h2>
+            <span class="release-date">August 2026</span>
+            <span class="release-tag latest">Current version</span>
           </div>
 
-          <p>Favourite shop, holiday mode, brand and model search, trip statistics, second-hand bike support, and a stack of day-to-day improvements.</p>
+          <p>First public release. Here is everything BikeHealth does today. Later versions will stack on top of this baseline.</p>
 
-          <h3>New features</h3>
+          <h3>Your bikes</h3>
           <ul>
-            <li><strong>Favourite shop.</strong> Save your trusted bike shop in your profile. Search by name or address via Google: the form auto-fills (name, address, phone, hours). A <em>Contact my shop</em> button appears on every bike profile, with a <em>Get directions</em> link that opens your nav app. Manual entry possible if your shop isn't in Google.</li>
-            <li><strong>Holiday mode.</strong> Toggle holiday mode from your Routines by entering departure and return dates. BikeHealth pauses automatic trip generation during this period and resumes on its own when you're back. A subtle banner on your bike list reminds you the mode is active.</li>
-            <li><strong>Grouped and richer notifications.</strong> Component alerts and maintenance reminders are bundled per bike (no more spam when several parts approach their threshold at once). For recurring maintenance, explicit choice between <em>Snooze 3 days</em> or <em>Snooze 50 km</em>. New <strong>annual service</strong> notification one year after the last service.</li>
-            <li><strong>Add bike: brand and model search.</strong> Goodbye nested dropdowns. Type the brand directly, suggestions appear in real time, the model auto-fills the bike's specs. Free text still possible. A discreet link lets you use a generic bike in one click if you don't know yours.</li>
-            <li><strong>Trip statistics.</strong> New <em>Statistics</em> sub-screen in your profile: trip breakdown by type (Work, Sport, Leisure, Errands…) in a donut chart. Percentages, trip counts, kilometres per category. Filterable by bike.</li>
-            <li><strong>Second-hand bike support.</strong> When adding a bike with initial mileage, BikeHealth asks you to flag components as new or recently serviced. No more false "replace" alerts on day one for parts that have already been changed.</li>
+            <li><strong>A catalogue of nearly 400 models</strong> across 39 brands, e-bikes included: components are created with their brand and model. Manual entry is available too, with standard thresholds you can refine afterwards.</li>
+            <li><strong>Custom photo</strong> from your gallery.</li>
+            <li><strong>Bike details screen</strong>: name, badge colour, type, date added, starting mileage, model year, brakes, drivetrain, frame, fork, e-bike, derailleurs, free-form notes.</li>
+            <li><strong>Already-ridden bike</strong>: when adding it, you declare which parts are new or recently replaced, so you don't get false alerts on day one.</li>
+            <li><strong>Several bikes</strong>, each with its own tracking, alerts and history. Archive a bike that no longer rides.</li>
           </ul>
 
-          <h3>Improvements</h3>
+          <h3>Components and wear</h3>
           <ul>
-            <li><strong>Monthly trip history.</strong> Validated trips are grouped by month with a summary (trip count, km). Past months collapsed by default.</li>
-            <li><strong>Monthly maintenance history.</strong> Same logic: monthly grouping, type filter (recurring / replacements / other), coloured bar to distinguish maintenance from replacements.</li>
-            <li><strong>Trip type at entry.</strong> Choose the type (Work, Sport, Leisure…) at trip creation. Editable later from the detail view.</li>
-            <li><strong>Full service checkbox in the maintenance form.</strong> Tick it to automatically update your bike's last service date.</li>
-            <li><strong>Maintenance notes.</strong> Notes entered at maintenance time now appear in the list and detail views.</li>
-            <li><strong>Component brand and model.</strong> In Advanced mode, edit a component's brand and model directly from the bike profile (⚙️ icon).</li>
-            <li><strong>Free notes on the bike profile.</strong> Add personal notes (tyre pressure, observations, shop info…) from the info bubble ⓘ.</li>
-            <li><strong>Bike rename.</strong> Edit your bike's name from the ⓘ bubble, in Simple or Advanced mode. BikeHealth ensures uniqueness in your fleet.</li>
-            <li><strong>Editable structural attributes.</strong> In Advanced mode, edit brake type, e-bike status, materials, drivetrain from the ⓘ bubble. Switching brake type or e-bike status auto-updates the related components.</li>
-            <li><strong>Custom photo.</strong> Pick a photo from your gallery to personalise each bike. Reverting to the original photo possible at any time.</li>
-            <li><strong>New profile dashboard.</strong> Reorganised into 4 navigable sub-screens: Routines, Connections, Shop, Statistics. Each section shows a dynamic summary of its state.</li>
-            <li><strong>Alert badge.</strong> Persistent red or orange indicator on the Alerts tab: at a glance you know if components need watching or maintenance is due.</li>
+            <li><strong>Tracking with alerts</strong>: chain or belt, cassette, front and rear tyres, disc brake pads or rim blocks, front and rear derailleurs, chainring, wheels and spokes, and for e-bikes the battery and motor.</li>
+            <li><strong>Gauge and status</strong>, green, amber or red, for every part.</li>
+            <li><strong>Thresholds you can check</strong>: drawn from manufacturer recommendations and workshop practice, they account for e-bikes and are spelled out in the "Our thresholds" section of your profile.</li>
+            <li><strong>Brand and model</strong> editable per component.</li>
+            <li><strong>Replacement history per part</strong>: you can see how many kilometres each successive chain lasted.</li>
           </ul>
 
-          <h3>Fixes</h3>
+          <h3>Trips and mileage</h3>
           <ul>
-            <li><strong>False alerts on archived bikes.</strong> Components of an archived bike no longer trigger badges or notifications.</li>
-            <li><strong>Unified date entry.</strong> All date fields now use Android's native calendar picker.</li>
-            <li><strong>Brand and model preserved on replacement.</strong> When replacing a component, existing values are pre-filled in the form.</li>
-            <li><strong>Statistics without initial mileage.</strong> Kilometres ridden before adding the bike to BikeHealth are no longer counted in statistics (they're still used for component wear calculation).</li>
-            <li>Minor bug fixes and stability improvements.</li>
+            <li><strong>Regular trips</strong> declared once (Commute, Sport, Leisure, Errands) and counted automatically, with no sensor.</li>
+            <li><strong>Weekly confirmation</strong> in one tap, on the day and at the time of your choosing.</li>
+            <li><strong>Manual entry</strong> for a one-off trip, with the type editable afterwards.</li>
+            <li><strong>Holiday mode</strong>: trip generation pauses for the dates you're away and resumes on its own when you're back.</li>
+            <li><strong>Trip history</strong> grouped by month.</li>
+          </ul>
+
+          <h3>Maintenance and alerts</h3>
+          <ul>
+            <li><strong>Four recurring reminders per bike</strong>: chain lubrication (150 km), tyre pressure (200 km or 14 days), brake check (300 km or 30 days), annual service (365 days).</li>
+            <li><strong>Custom reminders</strong> created from a bike's page, for what the app doesn't track on its own: insurance, a lock to replace.</li>
+            <li><strong>Snooze a reminder</strong> by 3 days or 50 km, straight from the notification.</li>
+            <li><strong>Alerts tab</strong> with a permanent badge: you can tell at a glance whether anything needs doing.</li>
+            <li><strong>Log maintenance in two taps</strong> from the alert, with notes, cost and a "full service" tick box.</li>
+            <li><strong>Maintenance history</strong> grouped by month, filterable by type.</li>
+            <li><strong>Notifications grouped by bike</strong>, either immediately or in a fixed slot you choose, and silent from 10pm to 8am in immediate mode.</li>
+          </ul>
+
+          <h3>Tips</h3>
+          <ul>
+            <li><strong>15 guides</strong> available in the app, across three areas.</li>
+            <li><strong>Something's wrong</strong>: I've punctured, my brakes feel soft, the chain has dropped or snapped, the gears won't shift cleanly, something's rubbing or making a noise, something else. Safety rule first, repair second.</li>
+            <li><strong>Taking care</strong>: the quick pre-ride check, the weekly routine, lubricating your chain properly, the monthly once-over, your saddlebag kit, looking after your safety gear.</li>
+            <li><strong>Replacing</strong>: the chain, the cassette, a tyre or an inner tube.</li>
+            <li><strong>Shop shortcut</strong> from every guide: reach your favourite shop, or find one open nearby.</li>
+          </ul>
+
+          <h3>Statistics</h3>
+          <ul>
+            <li><strong>Riding rhythm.</strong></li>
+            <li><strong>Maintenance cost</strong>, worked out from the amounts you log.</li>
+            <li><strong>Environmental impact</strong>: CO₂ avoided compared with an average petrol car, on ADEME figures.</li>
+            <li><strong>Split by trip type</strong>, filterable by bike.</li>
+          </ul>
+
+          <h3>Profile and settings</h3>
+          <ul>
+            <li><strong>Guided setup</strong> on first launch, replayable from Settings.</li>
+            <li><strong>Favourite shop</strong>: search by name or address, pre-filled details (name, address, phone, opening hours), manual entry available, buttons to call it and to get directions.</li>
+            <li><strong>Notification settings</strong> broken down by reminder family.</li>
+            <li><strong>Send feedback</strong> from inside the app.</li>
+            <li><strong>Data</strong>: anonymous statistics sharing can be switched off, and a single button deletes all your data.</li>
           </ul>
         </section>
 
       </article>
     </div>
   </main>
-
-    ============================================================
-    End of block to re-enable
-    ============================================================
-  -->
 
   <footer class="footer">
     <div class="container">
@@ -179,8 +182,7 @@
           <h3>Product</h3>
           <ul class="footer-list">
             <li><a href="/en/#features">Features</a></li>
-            <li><a href="/en/release-notes">Release notes</a></li>
-            <li><a href="/en/notification">Launch notification</a></li>
+            <li><a href="/en/release-notes" aria-current="page">Release notes</a></li>
             <li><a href="/en/contact">Contact</a></li>
           </ul>
         </div>

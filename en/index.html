@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- last-synced-with-fr: 2026-05-03 -->
+<!-- last-synced-with-fr: 2026-08-12 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -50,6 +50,7 @@
     "description": "Android app for bike maintenance tracking. Anticipate component wear and get alerts at the right time.",
     "url": "https://bikehealth.fr/en/",
     "inLanguage": "en",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
     "author": { "@type": "Person", "name": "BikeHealth" }
   }
   </script>
@@ -70,7 +71,7 @@
         <span>BikeHealth</span>
       </a>
       <nav id="primary-nav" aria-label="Main navigation">
-        <a class="menu-cta" href="/en/notification">Get notified at launch</a>
+        <a class="menu-cta" href="/en/contact">Contact us</a>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#how">How it works</a></li>
@@ -84,7 +85,7 @@
         </div>
       </nav>
       <div class="nav-end">
-        <a class="btn btn-primary nav-cta" href="/en/notification">Get notified<span class="nav-cta-suffix"> at launch</span></a>
+        <a class="btn btn-primary nav-cta" href="/en/contact">Contact us</a>
         <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="6" x2="21" y2="6"/>
@@ -106,13 +107,26 @@
             <h1>Stay ahead of your bike's wear.</h1>
             <p class="hero-pitch"><strong>Your silent companion that watches over your bike's components and alerts you at the right moment</strong>, so you never face a surprise breakdown or an unexpected repair bill.</p>
             <div class="hero-cta">
-              <a class="btn btn-primary btn-large" href="/en/notification">
-                Get notified at launch
-                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <!--
+                ============================================================
+                PLAY STORE BADGE (switch on at release)
+                ============================================================
+                1. Drop Google's official Play artwork into assets/
+                   (google-play-badge.png), the image Google mandates.
+                2. Uncomment the link below.
+                3. Paste the Play Store listing URL into the href.
+                The same block has to be switched on in the .cta-final
+                section at the bottom of this page, and on the FR home page.
+
+              <a class="playstore-badge" href="PLAY_STORE_LISTING_URL">
+                <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="182" height="54">
               </a>
+
+                ============================================================
+              -->
               <a class="btn btn-secondary btn-large" href="#features">Discover</a>
             </div>
-            <p class="hero-meta">Coming soon.</p>
+            <p class="hero-meta">Android · free</p>
           </div>
 
           <div class="hero-mockup">
@@ -131,8 +145,8 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Features</span>
-          <h2>Built to anticipate, not to repair.</h2>
-          <p>Made for cyclists who want to understand their bike without becoming a mechanic.</p>
+          <h2>BikeHealth doesn't replace a rider's eye. It gives it a memory.</h2>
+          <p>Made for people who ride every day. No mechanic required.</p>
         </div>
 
         <div class="features-grid">
@@ -141,23 +155,15 @@
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
             </div>
             <h3>Component tracking</h3>
-            <p>Chain, cassette, brake pads, tyres, chainring, wheels, battery and motor (e-bike)… Track every part with its own custom wear thresholds.</p>
+            <p>Chain, cassette, tyres, brake pads, chainring, wheels, battery and motor (e-bike). Every part has its own threshold and gauge: green, amber, red.</p>
           </article>
 
           <article class="feature-card">
             <div class="feature-icon">
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </div>
-            <h3>Recurring trips</h3>
-            <p>Set your routines (commute, Sunday rides…) and BikeHealth generates your recurring trips automatically.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <h3>Strava sync</h3>
-            <p>Connect your Strava account and your bike activities are imported automatically. Mileage updates itself.</p>
+            <h3>Trip routines</h3>
+            <p>Set your regular trips once (commute, errands, Sunday ride) and the app counts them for you. You confirm your week in one tap.</p>
           </article>
 
           <article class="feature-card">
@@ -165,15 +171,15 @@
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
             </div>
             <h3>Maintenance reminders</h3>
-            <p>Lube the chain, check tyre pressure, inspect brakes, annual service: BikeHealth sends the right reminder at the right time.</p>
+            <p>Lubrication, tyre pressure, brakes, annual service: the reminder lands when it's due. Add your own, for insurance or a lock to replace.</p>
           </article>
 
           <article class="feature-card">
             <div class="feature-icon">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="9.17" y1="14.83" x2="4.93" y2="19.07"/></svg>
             </div>
-            <h3>Simple or Advanced mode</h3>
-            <p>Casual rider or weekend mechanic: choose your level of detail. The app adapts to you, not the other way around.</p>
+            <h3>Tips</h3>
+            <p>You puncture, your brakes feel soft, something is rubbing: 15 guides written for the roadside. Safety first, the repair second.</p>
           </article>
 
           <article class="feature-card">
@@ -181,9 +187,19 @@
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <h3>Favourite shop</h3>
-            <p>Save your trusted mechanic: their hours and phone number are one tap away from every bike profile. Essential on those days when something's creaking.</p>
+            <p>Save your trusted mechanic: their hours, phone number and directions are one tap away from every bike profile, and from the Tips section.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg>
+            </div>
+            <h3>History, part by part</h3>
+            <p>You know how many kilometres your last chain lasted, and whether the next one does better. Every replacement is logged in two taps.</p>
           </article>
         </div>
+
+        <p class="section-note">More than one bike? Each gets its own tracking, alerts and history.</p>
       </div>
     </section>
 
@@ -197,23 +213,23 @@
         <div class="steps">
           <div class="step">
             <h3>Set up your profile</h3>
-            <p>Pick your mode (Simple or Advanced) and your weekly reminder day. Three minutes, no more.</p>
+            <p>The day you want to confirm your week, and when you want your notifications to arrive. Three minutes.</p>
           </div>
           <div class="step">
-            <h3>Add your bikes</h3>
-            <p>Brand, model, mileage, photo. Brand new or second-hand, BikeHealth adapts.</p>
+            <h3>Add your bike</h3>
+            <p>Find it in the catalogue and its components are created with their brand and model. Otherwise, enter it by hand with standard thresholds, to fine-tune whenever you like.</p>
           </div>
           <div class="step">
             <h3>Set your routines</h3>
-            <p>Commute, Sunday ride, Saturday errands. Or connect Strava and forget about it.</p>
+            <p>The commute, the errands, the Sunday ride. Once and for all.</p>
           </div>
           <div class="step">
             <h3>Ride with peace of mind</h3>
-            <p>BikeHealth alerts you when a component nears its threshold or maintenance is due. Not before.</p>
+            <p>You confirm your week in one tap. The app works out the wear and alerts you when a part reaches its threshold. Not before.</p>
           </div>
           <div class="step">
             <h3>Log your maintenance</h3>
-            <p>When you swap a chain or lube the drivetrain, log it in two taps. BikeHealth recalculates, the cycle continues.</p>
+            <p>Two taps from the alert. The counter resets, the history fills up.</p>
           </div>
         </div>
       </div>
@@ -221,14 +237,24 @@
 
     <section class="cta-final">
       <div class="container">
-        <h2>Ready to anticipate rather than repair?</h2>
-        <p>BikeHealth is launching soon. Sign up to be among the first to try it.</p>
+        <h2>Your bike has a memory now.</h2>
+        <p>BikeHealth is free, on Android.</p>
         <div class="cta-final-buttons">
-          <a class="btn btn-primary btn-large" href="/en/notification">
-            Get notified at launch
-            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <!--
+            ============================================================
+            PLAY STORE BADGE (switch on at release)
+            ============================================================
+            Same procedure as in the hero at the top of this page: drop
+            the official artwork into assets/, uncomment, paste the URL.
+
+          <a class="playstore-badge" href="PLAY_STORE_LISTING_URL">
+            <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="182" height="54">
           </a>
+
+            ============================================================
+          -->
         </div>
+        <p class="section-note">A question, a bug, an idea? <a href="/en/contact">Write to us.</a></p>
       </div>
     </section>
 
@@ -261,7 +287,6 @@
           <ul class="footer-list">
             <li><a href="#features">Features</a></li>
             <li><a href="/en/release-notes">Release notes</a></li>
-            <li><a href="/en/notification">Launch notification</a></li>
             <li><a href="/en/contact">Contact</a></li>
           </ul>
         </div>

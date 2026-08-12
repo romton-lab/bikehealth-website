@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- last-synced-with-fr: 2026-05-19 -->
+<!-- last-synced-with-fr: 2026-08-12 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy policy · BikeHealth</title>
-  <meta name="description" content="How BikeHealth handles your data. Spoiler: it stays on your device, except when you explicitly connect a third-party service.">
+  <meta name="description" content="What the BikeHealth app and the bikehealth.fr website do with your data.">
   <meta name="theme-color" content="#F4EFE6">
   <link rel="canonical" href="https://bikehealth.fr/en/privacy">
   <link rel="alternate" hreflang="fr" href="https://bikehealth.fr/confidentialite">
@@ -24,7 +24,7 @@
   <meta property="og:url" content="https://bikehealth.fr/en/privacy">
   <meta property="og:site_name" content="BikeHealth">
   <meta property="og:title" content="Privacy policy · BikeHealth">
-  <meta property="og:description" content="How BikeHealth handles your data. Spoiler: it stays on your device, except when you explicitly connect a third-party service.">
+  <meta property="og:description" content="What the BikeHealth app and the bikehealth.fr website do with your data.">
   <meta property="og:locale" content="en_GB">
   <meta property="og:locale:alternate" content="fr_FR">
   <meta property="og:image" content="https://bikehealth.fr/assets/og-image.jpg">
@@ -34,7 +34,7 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy policy · BikeHealth">
-  <meta name="twitter:description" content="How BikeHealth handles your data. Spoiler: it stays on your device, except when you explicitly connect a third-party service.">
+  <meta name="twitter:description" content="What the BikeHealth app and the bikehealth.fr website do with your data.">
   <meta name="twitter:image" content="https://bikehealth.fr/assets/og-image.jpg">
 
   <!-- Cloudflare Web Analytics (privacy-friendly, no cookies, no consent banner) -->
@@ -53,7 +53,7 @@
         <span>BikeHealth</span>
       </a>
       <nav id="primary-nav" aria-label="Main navigation">
-        <a class="menu-cta" href="/en/notification">Get notified at launch</a>
+        <a class="menu-cta" href="/en/contact">Contact us</a>
         <ul class="nav-links">
           <li><a href="/en/#features">Features</a></li>
           <li><a href="/en/#how">How it works</a></li>
@@ -67,7 +67,7 @@
         </div>
       </nav>
       <div class="nav-end">
-        <a class="btn btn-primary nav-cta" href="/en/notification">Get notified<span class="nav-cta-suffix"> at launch</span></a>
+        <a class="btn btn-primary nav-cta" href="/en/contact">Contact us</a>
         <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="3" y1="6" x2="21" y2="6"/>
@@ -84,175 +84,26 @@
       <article class="legal-content">
 
         <h1>Privacy policy</h1>
-        <p class="legal-meta">Last updated: 6 July 2026</p>
+        <p class="legal-meta">Last updated: 12 August 2026</p>
 
         <blockquote>
           <p><strong>Translation notice:</strong> this English version is provided for convenience. The <a href="/confidentialite">French version</a> at bikehealth.fr/confidentialite is the legally authoritative text. In case of discrepancy between the two, the French version prevails.</p>
         </blockquote>
 
-        <blockquote>
-          <p><strong>In one sentence:</strong> BikeHealth has no server. Your data stays on your device, unless <em>you</em> choose to connect a third-party service (Strava, Google Places). An anonymous crash report is sent to Firebase to identify bugs, which can be disabled at any time in the App's settings. Firebase Analytics measures app usage anonymously (key functional actions, no personal data). No ads, no profiling, no resale.</p>
-        </blockquote>
+        <h2>1. Contact</h2>
+        <p>BikeHealth is an independent project. For any question or request about your data: <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a></p>
 
-        <h2>1. Preamble</h2>
-        <p>This policy describes how the Android application <strong>BikeHealth</strong> (the "App") and the website <a href="https://bikehealth.fr">bikehealth.fr</a> handle their users' personal data.</p>
-        <p>It is written in compliance with the General Data Protection Regulation (GDPR, EU Regulation 2016/679) and the French Data Protection Act ("Loi Informatique et Libertés").</p>
+        <h2>2. What is stored on your phone</h2>
+        <p>Your bikes, their components, your trips, your maintenance records, your routines, your profile and your favourite shop are saved on your device. A button in Settings deletes the lot. Uninstalling the app erases them too.</p>
 
-        <h2>2. Data controller</h2>
-        <p>The data controller is the BikeHealth team, a personal project currently in beta phase (no commercial legal entity at this time).</p>
-        <ul>
-          <li><strong>Contact:</strong> <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a></li>
-          <li><strong>Website:</strong> <a href="https://bikehealth.fr">bikehealth.fr</a></li>
-        </ul>
+        <h2>3. Shop search</h2>
+        <p>When you search for a shop, whether to save your favourite or to find one that's open from a Tips page, your query is sent to Google (Places and Maps) to return results. For a nearby search, the app asks for your location, only at the moment of the search and only once you agree. No search is triggered without an action from you.</p>
 
-        <h2>3. Data stored locally (never transmitted)</h2>
-        <p>The App stores the following data <strong>only on your device</strong>, in a local SQLite database and the App's private filesystem. None of it is sent to any BikeHealth server (there is no BikeHealth server, in any case).</p>
-        <ul>
-          <li><strong>User profile:</strong> first name, mode (Simple / Advanced), day and time of weekly reminder, holiday mode dates.</li>
-          <li><strong>Bikes:</strong> name, brand, model, type, structural attributes (e-bike, brake type, frame…), notes, mileage, custom photos.</li>
-          <li><strong>Components:</strong> type, kilometres ridden, custom wear thresholds, brand/model, installation dates.</li>
-          <li><strong>Trips:</strong> date, distance, type, associated bike, status (validated / pending / rejected), notes, title.</li>
-          <li><strong>Maintenance entries:</strong> date, action performed, cost, shop, notes, components replaced.</li>
-          <li><strong>Routine trips:</strong> name, associated bike, distance, days of the week, type.</li>
-          <li><strong>Maintenance reminders:</strong> type (lubrication, tyre pressure, brakes, annual service), intervals, last actions, snoozes.</li>
-          <li><strong>Favourite shop:</strong> name, address, phone, hours, GPS coordinates, Google Places ID.</li>
-          <li><strong>Strava tokens:</strong> access token and refresh token, stored in the App's private preferences, isolated from other apps via Android sandboxing (only if you connect Strava).</li>
-        </ul>
-        <p>Depending on your Android device's backup settings, this data may be included in the automatic backup to your Google account. This behaviour is managed by Android, outside of BikeHealth's control.</p>
+        <h2>4. Crash reports and usage statistics</h2>
+        <p>The app sends anonymous crash reports and usage measurements, to fix bugs and understand which screens are useful. They cannot identify you and contain nothing about your bikes or your trips. You can switch them off in Settings, under Data.</p>
 
-        <h2>4. Data transmitted to third parties from the App (with your consent)</h2>
-        <p>You can use BikeHealth without any commercial third-party transmission, beyond the anonymous crash report described in section 5. If you don't activate Strava, don't set a favourite shop, and disable crash reporting, the App makes no network requests.</p>
-        <p>If you activate a feature, the following transmissions occur:</p>
-
-        <h3>Strava</h3>
-        <p>If you connect your Strava account, the App uses Strava's OAuth protocol. Your Strava credentials are entered directly on Strava's website. BikeHealth never sees them.</p>
-        <ul>
-          <li><strong>Received from Strava:</strong> athlete ID, profile photo, bike activities (date, distance, duration, type).</li>
-          <li><strong>Sent to Strava:</strong> API requests containing BikeHealth's client ID and your token.</li>
-          <li><strong>Strava's policy:</strong> <a href="https://www.strava.com/legal/privacy" rel="noopener">strava.com/legal/privacy</a></li>
-        </ul>
-
-        <h3>Google Places (shop search)</h3>
-        <p>If you search for a shop in the App, your query is sent to the Google Places API.</p>
-        <ul>
-          <li><strong>Sent to Google:</strong> search text, device IP address.</li>
-          <li><strong>Received from Google:</strong> autocomplete suggestions, details of the selected shop (name, address, phone, hours, coordinates).</li>
-          <li><strong>Google's policy:</strong> <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></li>
-        </ul>
-
-        <h3>Google Maps Static (shop mini-map)</h3>
-        <p>The App displays a static mini-map to visualise the location of your favourite shop.</p>
-        <ul>
-          <li><strong>Sent to Google:</strong> shop GPS coordinates, device IP address.</li>
-          <li><strong>Received from Google:</strong> PNG map image (displayed and temporarily cached, not durably stored).</li>
-        </ul>
-
-        <h2>5. Anonymous crash report (Firebase Crashlytics)</h2>
-        <p>To identify and fix bugs in real-world conditions, BikeHealth uses <strong>Firebase Crashlytics</strong>, a Google service. This collection is <strong>enabled by default</strong> in the public version of the App, but you can disable it at any time in <em>Profile &gt; Settings &gt; Data &gt; "Send anonymous crash reports"</em>.</p>
-        <p>When the App crashes, Crashlytics automatically sends to Firebase:</p>
-        <ul>
-          <li><strong>Technical stack trace</strong> of the crash (code, files, line numbers).</li>
-          <li><strong>Device information:</strong> model, Android version, available memory (collected automatically by the SDK).</li>
-          <li><strong>Non-identifying contextual information:</strong> App version, user mode (Simple / Advanced), number of registered bikes.</li>
-          <li><strong>Contextual technical logs:</strong> the last technical actions performed before the crash (e.g., "app start", "routine trip generation", "maintenance dialog open").</li>
-          <li><strong>ANRs</strong> (Application Not Responding): also captured automatically to detect interface freezes.</li>
-        </ul>
-        <p>The following data is <strong>never</strong> sent to Firebase:</p>
-        <ul>
-          <li>Your first name, email, or any nominative identifier.</li>
-          <li>The custom names you give your bikes.</li>
-          <li>The content of your trips, maintenance entries, notes, or reminders.</li>
-          <li>The address, phone, or GPS coordinates of your favourite shop.</li>
-          <li>Your Strava tokens or third-party service credentials.</li>
-        </ul>
-        <p>Among other Firebase services: Firebase Analytics is also used to measure functional app usage (see section 5bis below). No Performance Monitoring, no Remote Config, no A/B testing.</p>
-        <p><strong>Firebase policy:</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
-
-        <h2>5bis. Anonymous usage measurement (Firebase Analytics)</h2>
-        <p>BikeHealth uses <strong>Firebase Analytics</strong> to measure app usage anonymously. This helps understand which features are used and improve the App accordingly.</p>
-        <p>The data collected is <strong>anonymous and non-identifiable</strong>. No name, email or personal identifier is included. Logged events concern exclusively aggregated functional actions:</p>
-        <ul>
-          <li><strong>Setup:</strong> end of onboarding (Simple/Advanced mode chosen), adding a bike (brand, type, e-bike), connecting Strava, creating a trip routine, creating a manual reminder, archiving a bike, enabling or disabling holiday mode.</li>
-          <li><strong>Regular usage:</strong> adding a trip (manual / recurring / Strava), logging a maintenance entry, replacing a component, receiving an alert, handling an alert (done or postponed), weekly trip validation, opening a tips article.</li>
-        </ul>
-        <p>No individual screens, no typed content (titles, notes, photos), no location data, no custom bike name. Firebase Analytics is independent from Crashlytics: you can disable Crashlytics, Firebase Analytics does not collect any identifying data by default.</p>
-        <p><strong>Firebase policy:</strong> <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a></p>
-
-        <h2>6. Data collected on the website</h2>
-        <p>The website <a href="https://bikehealth.fr">bikehealth.fr</a> uses <strong>Cloudflare Web Analytics</strong> to measure its audience in a privacy-respecting way.</p>
-        <ul>
-          <li><strong>No cookies</strong> are set.</li>
-          <li><strong>No persistent identifier</strong> or individual fingerprinting.</li>
-          <li><strong>Data collected by Cloudflare:</strong> page visited, referrer, device and browser type, country (inferred from IP), session duration.</li>
-          <li>IP addresses are not retained in an identifying way by Cloudflare.</li>
-          <li><strong>Cloudflare policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">cloudflare.com/privacypolicy</a></li>
-        </ul>
-
-        <h2>7. What BikeHealth doesn't do</h2>
-        <ul>
-          <li>No commercial or advertising analytics tool (no Google Analytics, no Facebook SDK, no Mixpanel, no AppsFlyer). Firebase Analytics is used solely to measure app functional usage anonymously (see section 5bis) — no nominative behaviour tracking, no targeted advertising.</li>
-          <li>No advertising tracker, no advertising.</li>
-          <li>No cookies on the website (except the temporary technical cookies necessary for Strava's OAuth flow, managed by the relevant sites).</li>
-          <li>No sharing of your data with commercial third parties.</li>
-          <li>No user profiling, no marketing segmentation.</li>
-          <li>No data resale.</li>
-        </ul>
-
-        <h2>8. Android permissions and their use</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Permission</th>
-              <th>Use</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>POST_NOTIFICATIONS</code></td>
-              <td>Maintenance notifications: components at threshold, maintenance reminders, weekly trip validation.</td>
-            </tr>
-            <tr>
-              <td><code>READ_MEDIA_IMAGES</code></td>
-              <td>Pick a custom photo for your bike from the gallery.</td>
-            </tr>
-            <tr>
-              <td><code>INTERNET</code></td>
-              <td>Strava connection (OAuth + activity import), Google Places shop search, Google Maps Static mini-map, sending crash reports to Firebase Crashlytics, sending Firebase Analytics events.</td>
-            </tr>
-            <tr>
-              <td><code>RECEIVE_BOOT_COMPLETED</code></td>
-              <td>Restore alarms (automatic generation of routine trips, weekly reminder) after a device restart.</td>
-            </tr>
-            <tr>
-              <td><code>SCHEDULE_EXACT_ALARM</code></td>
-              <td>Trigger at the exact time the automatic generation of routine trips and the weekly reminder.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>9. Your rights</h2>
-        <p>In accordance with the GDPR, you have the following rights:</p>
-        <ul>
-          <li><strong>Access:</strong> all your data is visible in the App (bike profiles, trip history, maintenance entries, etc.).</li>
-          <li><strong>Rectification:</strong> you can modify all your data directly in the App at any time.</li>
-          <li><strong>Bike deletion:</strong> "Delete permanently" action available from the Archives screen. Erases the bike and all its associated data (trips, maintenance entries, components, routines, photo) irreversibly.</li>
-          <li><strong>Full data deletion:</strong> "Delete all my data" action available at the bottom of <em>Profile &gt; Settings</em>. Immediately and permanently erases all your bikes, trips, maintenance entries, routines, favourite shop, and preferences. The App reverts to its initial state, as if freshly installed.</li>
-          <li><strong>Portability:</strong> a JSON export feature is in development and will be available in a future version. In the meantime, write to <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a> if you need a copy of your data.</li>
-          <li><strong>Opt-out of crash reporting:</strong> "Send anonymous crash reports" toggle in <em>Profile &gt; Settings &gt; Data</em>. Once disabled, no data at all is sent to Firebase, including crashes.</li>
-          <li><strong>Uninstallation:</strong> deleting BikeHealth erases all your local data (unless Android has backed up a copy to your Google account based on your settings).</li>
-        </ul>
-        <p>For any question or complaint: <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a>. You may also lodge a complaint with the French data protection authority (CNIL: <a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) or your country's equivalent supervisory authority.</p>
-
-        <h2>10. Hosting</h2>
-        <p>The website <a href="https://bikehealth.fr">bikehealth.fr</a> is hosted by <strong>Cloudflare, Inc.</strong> (101 Townsend St, San Francisco, CA 94107, USA) on the Cloudflare Workers infrastructure.</p>
-        <p>The Android App will be distributed via <strong>Google Play</strong>, a service of Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).</p>
-        <p>Crash reports are processed by <strong>Google LLC / Firebase</strong> (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). See Firebase's policy for details on subprocessors and transfers.</p>
-
-        <h2>11. Modifications</h2>
-        <p>This policy may evolve (new features, additional integrations, change of technical provider). Any substantial change will be flagged via an update to the date at the top of this page and, where applicable, a notification in the App.</p>
-
-        <h2>12. Contact</h2>
-        <p>For any question regarding this policy or your data, write to <a href="mailto:contact@bikehealth.fr">contact@bikehealth.fr</a>.</p>
+        <h2>5. Website</h2>
+        <p>This site uses cookie-free audience measurement with no advertising tracker, which is why there is no consent banner. If you fill in the bike shop form, your email address and answers are used solely to get back to you.</p>
 
       </article>
     </div>
@@ -274,7 +125,6 @@
           <ul class="footer-list">
             <li><a href="/en/#features">Features</a></li>
             <li><a href="/en/release-notes">Release notes</a></li>
-            <li><a href="/en/notification">Launch notification</a></li>
             <li><a href="/en/contact">Contact</a></li>
           </ul>
         </div>
@@ -283,7 +133,7 @@
           <h3>Legal</h3>
           <ul class="footer-list">
             <li><a href="/en/terms">Terms of use</a></li>
-            <li><a href="/en/privacy">Privacy policy</a></li>
+            <li><a href="/en/privacy" aria-current="page">Privacy policy</a></li>
           </ul>
         </div>
       </div>

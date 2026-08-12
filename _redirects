@@ -25,8 +25,12 @@
 /en/privacy.html          /en/privacy             301
 /en/contact.html          /en/contact             301
 /en/release-notes.html    /en/release-notes       301
-/en/notification.html     /en/notification        301
 /en/notification-pro.html /en/notification-pro    301
+
+# Même chose côté EN : la page « Get notified at launch » est remplacée
+# par /en/contact.
+/en/notification          /en/contact             301
+/en/notification.html     /en/contact             301
 
 # Common URL aliases people (and Google) try by default on EN sites
 # Fixes the /terms 404 reported in Search Console.
