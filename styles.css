@@ -526,9 +526,13 @@ section {
   font-weight: 500;
 }
 
+/* align-items: center et non le "stretch" par défaut : le badge Play Store
+   fait 54px de haut, un .btn-large une soixantaine. Sans ça le badge est
+   étiré et son image reste calée en haut, d'où un décalage visible. */
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--space-3);
   margin-bottom: var(--space-4);
 }
@@ -801,6 +805,7 @@ section {
 .cta-final-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: var(--space-3);
 }
@@ -1012,6 +1017,17 @@ section {
   font-weight: 700;
   color: var(--color-text);
   margin: 0;
+}
+
+/* ".legal-content h2" (marge haute + filet) est plus spécifique que
+   ".release-version" et gagne. Or le titre est un item flex de
+   .release-header : sa marge ne fusionne pas avec celle du bloc du dessus,
+   les deux s'additionnent et creusent un trou. On neutralise ici. Le filet
+   de séparation entre versions est déjà porté par .release. */
+.legal-content .release-version {
+  margin: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .release-date {
