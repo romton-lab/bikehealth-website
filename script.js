@@ -24,11 +24,4 @@
       toggle.focus();
     }
   });
-
-  // Language toggle: persist user choice so future visits respect it
-  document.querySelectorAll('.lang-toggle a[data-lang]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      try { localStorage.setItem('bh-lang', a.getAttribute('data-lang')); } catch (e) {}
-    });
-  });
 })();

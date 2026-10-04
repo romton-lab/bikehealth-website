@@ -32,6 +32,20 @@
 /en/notification          /en/contact             301
 /en/notification.html     /en/contact             301
 
+# Variantes sans / avec slash final. Sans ces règles, Cloudflare répond par
+# un 307 (temporaire) ; même logique que pour les .html ci-dessus.
+/en                       /en/                    301
+/cgu/                     /cgu                    301
+/confidentialite/         /confidentialite        301
+/contact/                 /contact                301
+/release-notes/           /release-notes          301
+/notification-pro/        /notification-pro       301
+/en/terms/                /en/terms               301
+/en/privacy/              /en/privacy             301
+/en/contact/              /en/contact             301
+/en/release-notes/        /en/release-notes       301
+/en/notification-pro/     /en/notification-pro    301
+
 # Common URL aliases people (and Google) try by default on EN sites
 # Fixes the /terms 404 reported in Search Console.
 /terms                    /en/terms               301

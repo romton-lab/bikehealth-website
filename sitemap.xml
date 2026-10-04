@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bikehealth.fr/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://bikehealth.fr/release-notes</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/release-notes"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://bikehealth.fr/en/release-notes</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/release-notes"/>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://bikehealth.fr/en/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/"/>
@@ -90,5 +90,23 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/contact"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bikehealth.fr/contact"/>
+  </url>
+  <url>
+    <loc>https://bikehealth.fr/notification-pro</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/notification-pro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/notification-pro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bikehealth.fr/notification-pro"/>
+  </url>
+  <url>
+    <loc>https://bikehealth.fr/en/notification-pro</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bikehealth.fr/notification-pro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bikehealth.fr/en/notification-pro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bikehealth.fr/notification-pro"/>
   </url>
 </urlset>
